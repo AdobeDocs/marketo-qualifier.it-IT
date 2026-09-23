@@ -8,7 +8,7 @@ product_v2:
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
     internal-label: CX Enterprise
 Outbound Workflows    internal-label: Insights
-source-git-commit: d967b633fcb63c64169d3e3fbf305fd2ff82236d
+source-git-commit: 042ebc0019d33019940ff8ad98c0635cb97235f0
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Prestazioni in uscita in Adobe Marketo Qualifier
 
-Nel menu di navigazione a sinistra, seleziona **[!UICONTROL Prestazioni in uscita]** per tenere traccia dell&#39;attività in uscita e dei risultati nel tuo team. Il dashboard include due visualizzazioni: **[!UICONTROL Prestazioni organizzazione]** e **[!UICONTROL Prestazioni campagna]**.
+Per tenere traccia delle attività e dei risultati in uscita nel team, seleziona **[!UICONTROL Prestazioni in uscita]** nel menu di navigazione a sinistra. Il dashboard include due visualizzazioni: **[!UICONTROL Prestazioni organizzazione]** e **[!UICONTROL Prestazioni campagna]**.
 
 ![Prestazioni in uscita](assets/outbound-performance.png){width="800" zoomable="yes"}
 
@@ -24,7 +24,7 @@ Nel menu di navigazione a sinistra, seleziona **[!UICONTROL Prestazioni in uscit
 
 Questi controlli sono validi sia per le viste che per tutte le schede:
 
-* **[!UICONTROL Filtri]**: selezionare **[!UICONTROL Filtri]** per limitare il dashboard in base al membro del team e alla campagna.
+* **[!UICONTROL Filtri]**: per limitare il dashboard in base al membro del team e alla campagna, selezionare **[!UICONTROL Filtri]**.
 * **[!UICONTROL Periodo di tempo]**: selezionare un intervallo di reporting di 7, 15, 30, 60, 90, 180 o 365 giorni.
 
 ## Prestazioni dell’organizzazione
@@ -44,7 +44,7 @@ La scheda **[!UICONTROL Panoramica]** riepiloga i risultati in uscita. Fare clic
 
 La scheda **[!UICONTROL E-mail]** riporta il volume e l&#39;efficacia delle e-mail:
 
-* **Tessere**: frequenza di apertura e di clic, mostrate per impostazione predefinita in modo che le prestazioni siano comparabili tra le campagne di diversi volumi. Seleziona l’interruttore per visualizzare i conteggi non elaborati delle e-mail inviate, aperte, su cui si fa clic e a cui si risponde.
+* **Tessere**: frequenza di apertura e di clic, mostrate per impostazione predefinita in modo che le prestazioni siano comparabili tra le campagne di diversi volumi. Per visualizzare i conteggi non elaborati delle e-mail inviate, aperte, su cui si è fatto clic e a cui è stata inviata una risposta, seleziona l’opzione (Mostra/nascondi messaggi non elaborati).
 * **Grafico dell&#39;andamento settimanale delle e-mail**: attività e-mail per settimana.
 * Tabella delle prestazioni delle e-mail per rappresentante.
 
@@ -62,7 +62,7 @@ La scheda **[!UICONTROL Attività]** riporta l&#39;estensione manuale:
 
 **[!UICONTROL Prestazioni campagna]** segnala i risultati in uscita per campagna flusso di lavoro in uscita:
 
-* **Tessere KPI**: prospettive attive, tasso di apertura, tasso clic, tasso di risposta e riunioni prenotate. Per impostazione predefinita, il sistema mostra il tasso di apertura e di clic in modo che le prestazioni siano comparabili tra campagne di diversi volumi. Seleziona l’interruttore per visualizzare i conteggi non elaborati.
+* **Tessere KPI**: prospettive attive, tasso di apertura, tasso clic, tasso di risposta e riunioni prenotate. Per impostazione predefinita, il sistema mostra il tasso di apertura e di clic in modo che le prestazioni siano comparabili tra campagne di diversi volumi. Per visualizzare i conteggi non elaborati, seleziona l’opzione.
 * **Grafico di tendenza delle metriche della campagna**: KPI della campagna nel periodo di tempo selezionato.
 * Tabella **[!UICONTROL Campagne]**: e-mail, riunione, chiamata e attività messaggio LinkedIn per ogni campagna. Per visualizzare i dettagli a livello di rappresentante di una campagna, espandi la relativa riga.
 

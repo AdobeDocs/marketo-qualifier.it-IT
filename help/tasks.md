@@ -1,6 +1,6 @@
 ---
-title: Attività in Adobe Marketo Qualifier
-description: Scopri come elaborare le attività manuali di outreach e rivedere i potenziali clienti suggeriti dall’agente nella coda delle attività di Adobe Marketo Qualifier.
+title: Attività in [!DNL Adobe Marketo Qualifier]
+description: Scopri come elaborare le attività di outreach manuali e rivedere i potenziali clienti suggeriti dall'agente nella coda attività [!DNL Adobe Marketo Qualifier].
 feature: Agentic AI, Sales Insights, Account Journeys
 role: User
 TQID: 'https://experienceleague.adobe.com/MbTN1r-ARrW-XYtdIS-KZT7K1Lk-B3GihT8iXL60GrQ'
@@ -12,9 +12,9 @@ topic_v2:
     internal-label: Customer experience
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: d967b633fcb63c64169d3e3fbf305fd2ff82236d
+source-git-commit: 042ebc0019d33019940ff8ad98c0635cb97235f0
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '1086'
 ht-degree: 0%
 ---
 
@@ -45,7 +45,7 @@ Le attività manuali sono associate ai passaggi del flusso di lavoro in uscita e
 
 * **[!UICONTROL LinkedIn InMail]**—Creato quando una cadenza raggiunge un passaggio LinkedInMail. Il pannello di lavoro mostra il contenuto da copiare e inviare da LinkedIn. Espandi **[!UICONTROL Motivo IA]** per rivedere il motivo.
 
-* **[!UICONTROL Revisione e-mail]** - Creata dopo che Adobe Marketo Qualifier ha generato le e-mail personalizzate di un potenziale cliente. Seleziona **[!UICONTROL Rivedi e-mail]** per rivedere e approvare le bozze prima dell&#39;inizio dell&#39;estensione. Consulta [Rivedere e perfezionare le e-mail generate](outbound-workflows.md#review-and-refine-generated-emails).
+* **[!UICONTROL Revisione e-mail]**—Creata dopo che [!DNL Adobe Marketo Qualifier] ha generato le e-mail personalizzate di un potenziale cliente. Per rivedere e approvare le bozze prima dell&#39;inizio dell&#39;estensione, selezionare **[!UICONTROL Rivedi e-mail]**. Consulta [Rivedere e perfezionare le e-mail generate](outbound-workflows.md#review-and-refine-generated-emails).
 
 ![Revisione e-mail](assets/tasks-review.png)
 
@@ -83,7 +83,7 @@ La barra degli strumenti sopra l’elenco controlla quali attività vengono visu
 * **[!UICONTROL Ordina]**—Ordina per data di scadenza o data di creazione. L&#39;ordinamento determina anche l&#39;ordine di avanzamento della coda.
 * **[!UICONTROL Cerca attività]** - Trova le attività in base al nome del prospect, al nome della società o al flusso di lavoro in uscita. La ricerca è applicabile con i filtri attivi.
 
-I filtri attivi vengono visualizzati come chip sotto la barra degli strumenti. Seleziona **[!UICONTROL Cancella tutto]** per reimpostarli.
+I filtri attivi vengono visualizzati come chip sotto la barra degli strumenti. Per reimpostarli, selezionare **[!UICONTROL Cancella tutto]**.
 
 ### Stato attività
 
@@ -104,7 +104,7 @@ Le attività completate, saltate e annullate sono definitive. Le azioni non sono
 
 Nella scheda **[!UICONTROL Suggerimenti agente]** sono elencati i potenziali clienti che soddisfano i criteri di targeting di un flusso di lavoro in uscita e sono consigliati per la registrazione. Per attivare i consigli, vedi [Flussi di lavoro in uscita](outbound-workflows.md).
 
-Selezionare un suggerimento per esaminarlo nel pannello di lavoro:
+Per esaminare un suggerimento nel pannello di lavoro, selezionatelo:
 
 * Un badge di recency contrassegna ogni suggerimento come **[!UICONTROL Nuovo]** o **[!UICONTROL Precedente]**.
 * Nella tabella **[!UICONTROL contatti consigliati]** o **[!UICONTROL contatti consigliati]** sono elencati i potenziali clienti proposti con colonne per **[!UICONTROL Nome]**, **[!UICONTROL Titolo]**, **[!UICONTROL Account]**, **[!UICONTROL Stato]**, **[!UICONTROL E-mail]** e **[!UICONTROL Ultimo aggiornamento]**.
@@ -116,6 +116,23 @@ Sono disponibili due azioni:
 
 La scheda **[!UICONTROL Suggerimenti agente]** include **[!UICONTROL Filtri di stato Corrente]**, **[!UICONTROL Completata]** e **[!UICONTROL Annullata]**, un filtro del flusso di lavoro in uscita e un ordinamento in base alla data di creazione.
 
+### Rispondi a un potenziale cliente con il suggerimento di un agente
+
+Quando un potenziale cliente risponde a un&#39;e-mail, [!DNL Marketo Qualifier] può redigere una risposta nel thread e aggiungerla come attività in **[!UICONTROL Suggerimenti agente]**. La bozza utilizza il contesto pertinente di:
+
+* Il thread e-mail completo, non solo l’ultimo messaggio.
+* Il materiale collaterale del Knowledge Center e la ricerca sui prodotti.
+* Segnali dell’account, ad esempio notizie recenti, coinvolgimento di marketing e attività di gestione delle relazioni con i clienti.
+* [contesto di bozza e-mail](profile-settings.md#email-drafting-context) salvato.
+
+L’assistente adatta la risposta alle intenzioni del potenziale cliente. Ad esempio, può offrire orari attraverso il collegamento di prenotazione per una convocazione di riunione, rafforzare il valore quando il potenziale cliente è interessato, rispondere a una domanda di prodotto dal tuo materiale collaterale, condividere una risorsa rilevante, affrontare un’obiezione con un differenziatore o utilizzare una risposta a bassa pressione quando il potenziale cliente desidera differire.
+
+I messaggi relativi ai prezzi, ai requisiti legali o di sicurezza, alle risposte ostili e alle richieste non chiare rimangono a disposizione del rappresentante per una risposta personale.
+
+1. Apri il suggerimento di risposta e controlla il thread completo e la risposta redatta.
+1. Per creare un&#39;altra bozza, modificare la risposta o selezionare **[!UICONTROL Genera con IA]**.
+1. Per inviare la risposta e continuare il flusso di lavoro in uscita del prospect, selezionare **[!UICONTROL Approva e invia]**.
+
 ## Completare attività da un flusso di lavoro in uscita
 
 Nella visualizzazione **[!UICONTROL Prospect coinvolti]** di un flusso di lavoro in uscita, un punto di contatto manuale fornisce le stesse opzioni **[!UICONTROL Contrassegna come completato]**, **[!UICONTROL Salta]** e note. Il completamento di un&#39;attività ne aggiorna lo stato anche nella pagina **[!UICONTROL Attività]**. Vedi [Flussi di lavoro in uscita](outbound-workflows.md).
@@ -124,7 +141,7 @@ Nella visualizzazione **[!UICONTROL Prospect coinvolti]** di un flusso di lavoro
 
 * Se non hai attività su cui intervenire, l&#39;elenco mostra un messaggio _Sei stato contattato per oggi_.
 * Quando i filtri non corrispondono a nessuna attività, l’elenco segnala che nessuna attività corrisponde ai filtri.
-* Quando non è selezionata alcuna attività, il pannello di lavoro richiede di selezionare un’attività per visualizzarne i dettagli.
+* Quando non è selezionata alcuna attività, il pannello di lavoro richiede di selezionare un’attività. Per visualizzarne i dettagli, selezionare un&#39;attività.
 
 >[!MORELIKETHIS]
 >

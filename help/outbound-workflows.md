@@ -1,6 +1,6 @@
 ---
 title: Creare e gestire flussi di lavoro in uscita
-description: Scopri come creare, condividere, rivedere e gestire flussi di lavoro in uscita generati dall’intelligenza artificiale in Adobe Marketo Qualifier per eseguire cadenze di estensione basate su obiettivi.
+description: Scopri come creare, condividere, rivedere e gestire flussi di lavoro in uscita generati dall’intelligenza artificiale in [!DNL Adobe Marketo Qualifier] per eseguire cadenze di estensione basate su obiettivi.
 feature: Agentic AI, Sales Insights, Account Journeys
 role: User
 TQID: 'https://experienceleague.adobe.com/n3FbuiM2zF9QSqaKx1bhBSdbsf-w7vEsEGjCQTBo3g4'
@@ -19,9 +19,9 @@ topic_v2:
     internal-label: Personalization
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: d967b633fcb63c64169d3e3fbf305fd2ff82236d
+source-git-commit: 042ebc0019d33019940ff8ad98c0635cb97235f0
 workflow-type: tm+mt
-source-wordcount: '2064'
+source-wordcount: '2271'
 ht-degree: 0%
 ---
 
@@ -67,12 +67,14 @@ Gli amministratori possono assegnare il flusso di lavoro in uscita a un compagno
 
 L’obiettivo definisce il risultato previsto e guida il targeting, la cadenza e la generazione di e-mail.
 
-1. Seleziona **[!UICONTROL Inizia da zero]** per scrivere il tuo obiettivo oppure seleziona **[!UICONTROL Inizia da modello]** per utilizzare un modello salvato.
+1. Per scrivere il tuo obiettivo, seleziona **[!UICONTROL Inizia da zero]** oppure per utilizzare un modello salvato, seleziona **[!UICONTROL Inizia da modello]**.
 
-1. Seleziona uno dei **[!UICONTROL obiettivi consigliati]** corrispondenti alla tua azienda. Ogni raccomandazione include una breve spiegazione del perché. Seleziona un consiglio per completare l&#39;obiettivo, seleziona **[!UICONTROL Visualizza tutti]** per sfogliare l&#39;intero set di consigli o inserisci un obiettivo personalizzato. Puoi anche scegliere dall&#39;elenco **[!UICONTROL Obiettivi popolari]**.
+1. Seleziona uno dei **[!UICONTROL obiettivi consigliati]** corrispondenti alla tua azienda. Ogni raccomandazione include una breve spiegazione del perché. Per completare l’obiettivo, seleziona un consiglio. Per sfogliare l&#39;intero set di consigli, seleziona **[!UICONTROL Visualizza tutti]** oppure inserisci un obiettivo personalizzato. Puoi anche scegliere dall&#39;elenco **[!UICONTROL Obiettivi popolari]**.
 1. Seleziona **[!UICONTROL Successivo: Targeting]**.
 
 Indica un risultato specifico nell’obiettivo. Ad esempio, immettere `Book a 15-minute discovery call with marketing leaders evaluating campaign automation` anziché `Promote campaign automation`.
+
+L’intelligenza artificiale mantiene i requisiti nell’obiettivo esattamente nei punti di contatto generati. Includi frasi esatte, righe di apertura o chiusura necessarie, sessioni e date denominate o una struttura specifica quando il contenuto generato deve mantenerle.
 
 ### Passaggio 2: configurare i filtri di targeting
 
@@ -80,12 +82,29 @@ I filtri di targeting definiscono quali potenziali clienti sono idonei. Quando s
 
 ![Filtri di destinazione](assets/create-workflow-targeting.png){width="800" zoomable="yes"}
 
-1. Selezionare la freccia rivolta verso il basso per aprire l&#39;elenco **[!UICONTROL Aggiungi un filtro]**, quindi selezionare un filtro.
+Descrivi il tuo potenziale cliente ideale nel linguaggio naturale. Immettere ad esempio `Hot leads at companies with 500 or more employees who requested a demo`. [!DNL Adobe Marketo Qualifier] converte la descrizione in criteri di targeting che è possibile rivedere e perfezionare.
+
+1. Per aprire l&#39;elenco **[!UICONTROL Aggiungi un filtro]**, selezionare la freccia rivolta verso il basso, quindi selezionare un filtro.
 
 1. Imposta i valori per il filtro.
 1. Aggiungi altri filtri per restringere il pubblico.
 
 1. Seleziona **[!UICONTROL Avanti: genera punti di contatto]**.
+
+Il targeting può utilizzare il tipo di attività, il punteggio, la valutazione e altri attributi disponibili. Combinare i criteri con [!DNL AND] o [!DNL OR] e utilizzare operatori quali è uguale a, contiene, maggiore di, minore di e tra.
+
+### Iscrizione automatica dei potenziali clienti da Marketing Highlights
+
+Un flusso di lavoro in uscita può valutare l’attività dei punti salienti del marketing in tempo reale in base ai relativi criteri di targeting. Quando l&#39;attività corrisponde, [!DNL Marketo Qualifier] risolve il proprietario del CRM del prospect tramite e-mail e registra il prospect solo in un flusso di lavoro idoneo che appartiene a tale rappresentante.
+
+L’iscrizione automatica segue questa sequenza:
+
+1. Un rappresentante definisce i criteri di targeting del flusso di lavoro.
+1. L&#39;attività Live [!DNL Marketo] arriva per un prospect.
+1. [!DNL Marketo Qualifier] risolve il proprietario del prospect da Salesforce o Microsoft Dynamics e valuta l&#39;attività in base ai flussi di lavoro idonei del proprietario.
+1. Quando i criteri corrispondono, il prospect viene registrato e inizia l’estensione.
+
+Se un altro rappresentante sta già contattando il prospect, [!DNL Marketo Qualifier] visualizza un avviso prima dell&#39;avvio dell&#39;outreach duplicato.
 
 ### Passaggio 3: generare e rivedere i punti di contatto
 
@@ -123,7 +142,7 @@ Il passaggio **[!UICONTROL Impostazioni]** controlla il modo in cui viene esegui
 
 ![Pannello impostazioni](assets/create-workflow-settings.png){width="800" zoomable="yes"}
 
-1. Rivedi il nome del flusso di lavoro in uscita **&#x200B;**&#x200B;e modificalo se necessario.
+1. Rivedi il nome del flusso di lavoro in uscita **** e modificalo se necessario.
 1. In **[!UICONTROL Numero massimo di potenziali clienti per flusso di lavoro in uscita]**, confermare il numero massimo di potenziali clienti che il flusso di lavoro in uscita può gestire contemporaneamente.
 1. Imposta la **[!UICONTROL finestra di invio]** per le ore in cui le e-mail in uscita possono essere inviate.
 1. Seleziona i giorni della settimana in cui le e-mail possono essere inviate. Per evitare gli invii di fine settimana, seleziona solo i giorni della settimana invece di utilizzare un&#39;impostazione **[!UICONTROL Ignora fine settimana]** separata.
@@ -147,7 +166,7 @@ Il salvataggio apre la vista di selezione del prospect con i filtri di targeting
 
 1. Regolare i filtri qui se è necessario espandere o restringere l’elenco.
 1. Seleziona i potenziali clienti utilizzando le caselle di controllo.
-1. Seleziona **[!UICONTROL Successivo: controlla i punti di contatto]** per avviare la generazione di e-mail per ogni potenziale cliente.
+1. Per avviare la generazione di e-mail per ogni potenziale cliente, seleziona **[!UICONTROL Avanti: controlla i punti di contatto]**.
 
 IA genera un’e-mail personalizzata per ogni potenziale cliente e punto di contatto e-mail selezionati. I punti di contatto Phone e LinkedInMail rimangono passaggi pianificati. Per continuare a lavorare durante la generazione, selezionare **[!UICONTROL Notifica quando pronto]**.
 
@@ -159,14 +178,14 @@ Le e-mail possono anche essere generate nel linguaggio del potenziale cliente, c
 
 ## Rivedere e perfezionare le e-mail generate
 
-Al termine della generazione, nella vista dei dettagli Flusso di lavoro in uscita viene richiesto di esaminare le bozze. Adobe Marketo Qualifier non invia e-mail fino all’approvazione.
+Al termine della generazione, nella vista dei dettagli Flusso di lavoro in uscita viene richiesto di esaminare le bozze. [!DNL Marketo Qualifier] non invia l&#39;e-mail finché non la approvi.
 
 1. Nella visualizzazione dei dettagli del flusso di lavoro in uscita, selezionare **[!UICONTROL Rivedi bozze]** nel banner.
 1. Il passaggio **[!UICONTROL Rivedi punti di contatto]** ha due schede:
    * **[!UICONTROL Pronto per la revisione]**: messaggi di posta elettronica che hanno completato la generazione.
    * **[!UICONTROL Generazione in corso]** - Messaggi di posta elettronica ancora in fase di scrittura.
-1. Nell’elenco dei potenziali clienti a sinistra, seleziona un nome per caricare i punti di contatto del potenziale cliente a destra.
-1. Utilizzare la freccia (**>**) in un punto di contatto per espandere e leggere l&#39;oggetto e il corpo completi.
+1. Per caricare i punti di contatto di un prospect a destra, seleziona il nome del prospect nell’elenco a sinistra.
+1. Per espandere un punto di contatto e leggere l&#39;oggetto e il corpo completi, utilizzare la freccia (**>**).
 
 ### Leggere il ragionamento dell’intelligenza artificiale
 
@@ -176,7 +195,7 @@ Per ogni e-mail generata, **[!UICONTROL Reasoning]** spiega come l&#39;intellige
 
 Per piccole modifiche di testo o tono:
 
-1. Nel punto di contatto espanso, seleziona l&#39;icona **[!UICONTROL Modifica]** per aprire l&#39;editor.
+1. Per aprire l&#39;editor, seleziona l&#39;icona **[!UICONTROL Modifica]** sul punto di contatto espanso.
 1. Modifica l&#39;oggetto o il corpo.
 1. Seleziona **[!UICONTROL Salva]**.
 
@@ -208,13 +227,15 @@ Le e-mail approvate vengono inviate in base ai giorni selezionati, alla finestra
 
 ## Condividere un flusso di lavoro in uscita
 
-Ogni flusso di lavoro in uscita ha un&#39;impostazione **[!UICONTROL Autorizzazioni]**. I flussi di lavoro in uscita sono **[!UICONTROL Privati]** per impostazione predefinita. Il proprietario può selezionare **[!UICONTROL Condiviso con tutti]** per rendere disponibile al team un flusso di lavoro in uscita.
+Ogni flusso di lavoro in uscita ha un&#39;impostazione **[!UICONTROL Autorizzazioni]**. I flussi di lavoro in uscita sono **[!UICONTROL Privati]** per impostazione predefinita. Per rendere disponibile al team un flusso di lavoro in uscita, il proprietario può selezionare **[!UICONTROL Condiviso con tutti]**.
 
 >[!CAUTION]
 >
 >La condivisione è permanente. Dopo che un flusso di lavoro in uscita è impostato su **[!UICONTROL Condiviso con tutti]**, non può essere ripristinato su **[!UICONTROL Privato]**.
 
 In un flusso di lavoro in uscita condiviso, i team possono registrare i propri potenziali clienti. Ogni persona può gestire o mettere in pausa solo i potenziali clienti a cui è iscritta, incluso l’utilizzo di azioni in blocco. Solo il proprietario del flusso di lavoro in uscita può modificare le impostazioni a livello di piano, tra cui pianificazione, fuso orario e cadenza. Queste impostazioni sono di sola lettura per i colleghi.
+
+Quando iscrivi i potenziali clienti in un flusso di lavoro in uscita condiviso, scegli se il messaggio e-mail viene inviato come proprietario del flusso di lavoro o come rappresentante assegnato di ciascun lead.
 
 Utilizza questi filtri per mantenere attivi i flussi di lavoro in uscita condivisi e i risultati:
 
@@ -241,7 +262,7 @@ Nella [Posta in uscita](email-outbox.md) sono elencate le e-mail automatizzate i
 Quando connetti il calendario, Marketo Qualifier genera un collegamento di prenotazione personale che i potenziali clienti possono utilizzare per pianificare con te il tempo.
 
 * **Collegamenti prenotazione** - Configura la connessione al calendario e la disponibilità in [Impostazioni profilo](profile-settings.md). Aggiungi il collegamento di prenotazione alla firma e-mail in modo che venga visualizzato nelle e-mail in uscita.
-* **Inserimento cadenza**: Marketo Qualifier inserisce il collegamento di prenotazione nei punti rilevanti di una cadenza. Potete modificarne la posizione.
+* **Inserimento cadenza** - Marketo Qualifier inserisce il collegamento di prenotazione nei punti rilevanti di una cadenza. Potete modificarne la posizione.
 * **Pausa prenotazione** - Quando un prospect registra una riunione, **[!UICONTROL Pausa prenotazione riunione]** interrompe ulteriori follow-up. Vedere [Passaggio 4: Configurare le impostazioni del flusso di lavoro in uscita](#step-4-configure-outbound-workflow-settings).
 
 Tieni traccia degli esiti della prenotazione nella pagina [Prestazioni in uscita](performance.md).

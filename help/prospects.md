@@ -1,6 +1,6 @@
 ---
-title: Potenziali clienti in Adobe Marketo Qualifier
-description: Scopri come creare l’elenco di potenziali clienti da origini CRM, importate e aggiunte manualmente, filtrare i potenziali clienti e rivedere i dettagli in Adobe Marketo Qualifier.
+title: Potenziali clienti in [!DNL Adobe Marketo Qualifier]
+description: Scopri come creare l'elenco di potenziali clienti da CRM, da origini importate e aggiunte manualmente, filtrare i potenziali clienti ed esaminare i dettagli in [!DNL Adobe Marketo Qualifier].
 feature: Agentic AI, Sales Insights, Account Journeys
 role: User
 TQID: 'https://experienceleague.adobe.com/zf2H5rq1JlIT26LqLPMrm2Mq3tSIrLOiTEw6BXb1w2U'
@@ -15,28 +15,38 @@ topic_v2:
     internal-label: Customer experience
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: d967b633fcb63c64169d3e3fbf305fd2ff82236d
+source-git-commit: 2124387555f5fb08ea19eaf121fc87aa66d66de2
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '755'
 ht-degree: 1%
 ---
 
 # Potenziali clienti
 
-Seleziona **[!UICONTROL Potenziali]** nella barra di navigazione a sinistra per visualizzare i lead e i contatti a cui puoi accedere. Utilizza l’elenco per rivedere lo stato di ogni prospect e l’ultima attività.
+Per visualizzare i lead e i contatti a cui puoi accedere, seleziona **[!UICONTROL Prospect]** nell&#39;area di navigazione a sinistra. Utilizza l’elenco per rivedere lo stato di ogni prospect e l’ultima attività.
 
 ![Tabella dei potenziali clienti con lo stato del lead e l&#39;ultima attività per la gestione dei potenziali clienti](./assets/prospects.png){width="800" zoomable="yes"}
 
-* **[!UICONTROL Lead]** - Lead assegnati all&#39;utente nel CRM connesso.
-* **[!UICONTROL Contatti]** - Contatti assegnati all&#39;utente nel CRM connesso.
-* **[!UICONTROL Elementi di rilievo marketing]** - Potenziali clienti con attività Marketo live, ad esempio aperture di e-mail o clic.
-* **[!UICONTROL Elenco persone]**—Potenziali importati o aggiunti manualmente.
+* **[!UICONTROL Lead]** Lead assegnati a te nel CRM connesso.
+* **[!UICONTROL Contatti]** Contatti assegnati all&#39;utente nel CRM connesso.
+* **[!UICONTROL Dati di rilievo sul marketing]** potenziali clienti con attività Marketo live, ad esempio aperture di e-mail o clic.
+* **[!UICONTROL Elenco persone]** Potenziali importati o aggiunti manualmente.
+
+## Esamina il contesto del prospect ed esporta l’elenco
+
+L’elenco dei potenziali clienti riepiloga se è disponibile un contesto aggiuntivo per la sensibilizzazione personalizzata. Un riepilogo sopra l&#39;elenco mostra il numero di potenziali clienti in ogni stato e la colonna di contesto visualizza lo stato di ogni potenziale cliente:
+
+* **[!UICONTROL Applicato]** Contesto disponibile applicato al prospect.
+* **[!UICONTROL Parziale]** È stato applicato solo parte del contesto disponibile.
+* **[!UICONTROL Mancante]** Nessun contesto aggiuntivo disponibile.
+
+Per scaricare l&#39;elenco di prospect corrente come file CSV, selezionare **[!UICONTROL Esporta CSV]**.
 
 ## Crea il tuo elenco di potenziali clienti
 
 L’elenco dei potenziali clienti combina persone provenienti da più origini:
 
-* **Prospettivi CRM**: Adobe Marketo Qualifier importa automaticamente i lead e i contatti assegnati all&#39;utente connesso. Consulta [Integrazioni](integrations.md).
+* **Prospettive CRM**—[!DNL Adobe Marketo Qualifier] importa automaticamente i lead e i contatti assegnati all&#39;utente connesso. Consulta [Integrazioni](integrations.md).
 * **Prospect importati** - Prospect importati da un file CSV.
 * **Potenziali aggiunti manualmente** - Singoli potenziali aggiunti in Marketo Qualifier.
 
@@ -57,7 +67,7 @@ Per aggiungere potenziali clienti non provenienti dal CRM:
 
 ## Filtrare e trovare potenziali clienti
 
-Seleziona **[!UICONTROL Filtro]** per restringere l&#39;elenco. Puoi filtrare per:
+Per limitare l&#39;elenco, selezionare **[!UICONTROL Filtro]**. Puoi filtrare per:
 
 * Stato del flusso di lavoro in uscita
 * Creato da
@@ -66,13 +76,13 @@ Seleziona **[!UICONTROL Filtro]** per restringere l&#39;elenco. Puoi filtrare pe
 * Origine
 * Ultimo aggiornamento
 
-Gli amministratori possono anche rendere disponibili come filtri i campi CRM mappati. In **[!UICONTROL Impostazioni amministratore]**, attiva **[!UICONTROL Filtrabile]** per ogni campo utilizzato dai rappresentanti per trovare potenziali clienti. Vedi [Mappa campi CRM](integrations.md#map-crm-fields-inbound-mapping).
+Gli amministratori possono anche rendere disponibili come filtri i campi CRM mappati. In **[!UICONTROL Impostazioni amministratore]**, attiva **[!UICONTROL Filtrabile]** per ogni campo utilizzato dagli utenti per trovare potenziali clienti. Vedi [Mappa campi CRM](integrations.md#map-crm-fields-inbound-mapping).
 
 In **[!UICONTROL Contatti opportunità personali]** è inoltre possibile filtrare i contatti in base ai campi dalle opportunità associate, ad esempio area di visualizzazione, tipo e data di chiusura. I campi dell&#39;opportunità hanno etichette come **[!UICONTROL Stage (Opportunità)]**, che li distingue dai campi del contatto. L’amministratore controlla quali campi dell’opportunità sono disponibili come filtri.
 
 ### Filtra per elementi di rilievo sul marketing
 
-Trova e assegna la priorità ai potenziali clienti in base al loro coinvolgimento live [!DNL Marketo], ad esempio aperture e clic via e-mail, visite web, riempimenti di moduli e momenti interessanti. Il coinvolgimento appare quasi in tempo reale, come accade.
+Rivedi e assegna la priorità ai potenziali clienti in base al loro coinvolgimento live [!DNL Marketo], ad esempio attività e-mail, visite web e riempimenti di moduli. Il coinvolgimento appare quasi in tempo reale, come accade.
 
 Per filtrare i potenziali clienti in base alle caratteristiche di marketing:
 
@@ -85,18 +95,18 @@ Marketing Highlights è disponibile in tutte le aree geografiche di produzione. 
 
 ## Rivedi dettagli prospect
 
-Seleziona un potenziale cliente per aprire il suo profilo. Rivedi i segnali importanti prima di contattare:
+Per aprire il profilo di un prospect, selezionarlo. Rivedi i segnali importanti prima di contattare:
 
-* **Riepilogo persona IA**: istantanea scritta da IA del lead o del contatto e del loro impegno recente. Utilizza il riepilogo per capire subito la persona prima di rivedere le singole attività. I riepiloghi di persone IA sono disponibili nelle istanze che eseguono Adobe Journey Optimizer B2B edition Prime o Ultimate.
+* **Riepilogo persona IA**: istantanea scritta da IA del lead o del contatto e del loro impegno recente. Utilizza il riepilogo per comprendere la persona rapidamente prima di rivedere le singole attività. I riepiloghi delle persone di IA sono disponibili nelle istanze che eseguono [!DNL Marketo Optimizer] Prime o Ultimate.
 * **Elenco attività**: elenco cronologico delle attività e dei comportamenti recenti.
 * **Visualizzazione sequenza temporale**: sequenza temporale visiva del coinvolgimento tra i canali.
-* **Contenuto visualizzato**: pagine Web e risorse visualizzate dal prospect. Selezionare un elemento per aprirlo.
+* **Contenuto visualizzato**: pagine Web e risorse visualizzate dal prospect. Per aprire un elemento, selezionarlo.
 
 ### Genera preparazione riunione
 
 Oltre al riepilogo permanente della persona di intelligenza artificiale, puoi generare una preparazione della riunione personalizzata per una chiamata specifica in arrivo dalla scheda **[!UICONTROL Ricerca riunione]**, accanto a **[!UICONTROL Ricerca account]**.
 
-* **Basato su obiettivo** - Se il prospect è iscritto a un flusso di lavoro in uscita in esecuzione, selezionarlo. La preparazione è allineata all’obiettivo del flusso di lavoro in uscita, ad esempio la prenotazione di una riunione, un lancio di prodotto, un invito a un evento o il coinvolgimento del potenziale cliente.
+* **Basato su obiettivo** - Se il prospect è iscritto a un flusso di lavoro in uscita in esecuzione, selezionarlo. La preparazione è allineata all’obiettivo del flusso di lavoro in uscita, ad esempio la prenotazione di una riunione o il coinvolgimento del potenziale cliente.
 * **Prompt personalizzato**: immettere gli elementi per cui si desidera prepararsi, ad esempio `Focus on renewal risk` o `Prepare for a technical deep dive with their IT lead`. La preparazione corrisponde al prompt. L’opzione di richiesta personalizzata è disponibile ogni volta che il prospect non si trova in un flusso di lavoro in uscita in esecuzione.
 
 >[!MORELIKETHIS]

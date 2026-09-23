@@ -1,6 +1,6 @@
 ---
 title: Impostazioni di amministrazione
-description: Scopri come gestire i campi di gestione delle relazioni con i clienti, la sincronizzazione delle attività, la rinuncia alle e-mail e altre impostazioni di amministrazione di Adobe Marketo Qualifier.
+description: Scopri come gestire i campi di gestione delle relazioni con i clienti, la sincronizzazione delle attività, la rinuncia alle e-mail e altre impostazioni di amministrazione [!DNL Adobe Marketo Qualifier].
 feature: Agentic AI, Sales Insights, Account Journeys
 role: Admin
 TQID: 'https://experienceleague.adobe.com/vbtO6I67ZEaZz3oio9InNErvq5D0wjbRxyDZpTq8Lzo'
@@ -14,9 +14,9 @@ feature_v2:
     internal-label: Administration
 
 internal-label: Administration
-source-git-commit: d967b633fcb63c64169d3e3fbf305fd2ff82236d
+source-git-commit: 042ebc0019d33019940ff8ad98c0635cb97235f0
 workflow-type: tm+mt
-source-wordcount: '1091'
+source-wordcount: '1221'
 ht-degree: 0%
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 Utilizza **[!UICONTROL Impostazioni amministratore]** per configurare le integrazioni CRM, gestire il Knowledge Center e configurare la rinuncia e-mail.
 
-Adobe Marketo Qualifier si connette a Salesforce o Microsoft Dynamics 365. La connessione offre a Account Qualification Agent (AQA) una visualizzazione coerente di lead, account, contatti, attività e proprietari. Marketo Qualifier può anche riscrivere le attività di outreach e lo stato di rinuncia al CRM e sincronizzare le attività di outreach con Marketo.
+[!DNL Adobe Marketo Qualifier] si connette a Salesforce o Microsoft Dynamics 365. La connessione offre a Account Qualification Agent (AQA) una visualizzazione coerente di lead, account, contatti, attività e proprietari. Marketo Qualifier può anche riscrivere le attività di outreach e lo stato di rinuncia al CRM e sincronizzare le attività di outreach con Marketo.
 
 Per configurare le connessioni CRM, il mapping dei campi e la sincronizzazione delle attività, passare a **[!UICONTROL Amministrazione]** > **[!UICONTROL Impostazioni amministratore]** > **[!UICONTROL Connessioni CRM]**. Gli utenti standard possono utilizzare i dati e i filtri CRM configurati, ma non possono modificare queste impostazioni. Per connettere un CRM per la prima volta, vedere [Introduzione](getting-started.md#connect-your-crm).
 
@@ -37,8 +37,21 @@ Per configurare le connessioni CRM, il mapping dei campi e la sincronizzazione d
 Marketo Qualifier funziona con il tuo CRM in questi modi:
 
 * **Query MCP CRM**: Account Qualification Agent esegue query sui dati CRM in tempo reale in modo che le risposte e le informazioni riflettano lo stato corrente dei record.
-* **Plug-in incorporato**. Il plug-in CRM visualizza informazioni e dati di agente [!DNL Marketo Sales Insights] (MSI) nel CRM. Utilizza il plug-in per aggiungere un prospect a Marketo Qualifier.
+* **Plug-in incorporato**. Il plug-in CRM visualizza informazioni e dati di agente [!DNL Marketo Sales Insights] (MSI) nel CRM. Utilizzare il plug-in per aggiungere un prospect a [!DNL Marketo Qualifier].
 * **Sincronizzazione attività** - Quando un amministratore attiva **[!UICONTROL Sincronizzazione attività]**, le attività di outreach vengono sincronizzate con CRM e Marketo.
+
+### Assegnare la priorità ai lead nel plug-in CRM
+
+Il plug-in CRM fornisce una home predefinita in cui i rappresentanti possono assegnare la priorità ai lead senza uscire dal CRM. Le schede disponibili organizzano il lavoro per origine e intento:
+
+* **[!UICONTROL Elementi di maggiore rilevanza]**: suggerimenti lead pronti per l&#39;azione.
+* **[!UICONTROL Elenco oggetti osservati]** - Lead che si stanno monitorando.
+* **[!UICONTROL Attività Web]** - Visite recenti al sito da lead noti.
+* **[!UICONTROL Attività Web anonima]**—Visite da visitatori non identificati.
+* **[!UICONTROL E-mail]**: coinvolgimento e-mail associato ai lead.
+* **[!UICONTROL Webinar]**: registrazione e partecipazione al webinar.
+
+Ogni lead può includere un&#39;anteprima e-mail di [!DNL Marketo], un collegamento ai dettagli del lead e una ricerca LinkedIn. Le schede e i dati a cui puoi accedere dipendono dalla configurazione del plug-in di gestione delle relazioni con i clienti.
 
 ## Ambito di accesso CRM
 
@@ -55,7 +68,7 @@ Dopo aver connesso il CRM, selezionare **[!UICONTROL Gestisci]** per la connessi
 1. Selezionare **[!UICONTROL Aggiungi sezione]**.
 1. Immettere un nome e una descrizione per la sezione.
 1. Selezionare un tipo di entità. **[!UICONTROL Prospect]** è selezionato per impostazione predefinita. Sono inoltre disponibili **[!UICONTROL Contatti]**, **[!UICONTROL Account]** e **[!UICONTROL Opportunità]**.
-1. Seleziona i campi CRM da importare.
+1. Per importare i campi CRM, selezionali.
 
    Ogni riga di campo visualizza il relativo **[!UICONTROL Nome visualizzato]**, **[!UICONTROL Nome campo]** e **[!UICONTROL Tipo di dati]**.
 
@@ -72,13 +85,13 @@ I campi mappati vengono visualizzati nelle aree corrispondenti di Marketo Qualif
 
 1. Da **[!UICONTROL connessioni CRM]**, selezionare **[!UICONTROL Gestisci]** per il CRM connesso.
 1. Apri **[!UICONTROL Mappatura in uscita]**.
-1. Attiva **[!UICONTROL Sincronizzazione attività]** per sincronizzare le attività di reindirizzamento del qualificatore Marketo con CRM e Marketo.
+1. Attiva **[!UICONTROL Sincronizzazione attività]** per sincronizzare nuovamente le attività di Marketo Qualifier Outreach con CRM e Marketo.
 
-Quando la sincronizzazione delle attività è disattivata, Marketo Qualifier continua a utilizzare i dati CRM in entrata ma non sincronizza le attività di outreach con il tuo CRM o Marketo.
+Quando la sincronizzazione delle attività è disattivata, Marketo Qualifier continua a utilizzare i dati CRM in entrata ma non sincronizza le attività di distribuzione con il tuo CRM o Marketo.
 
 ## Configurare le regole di sincronizzazione CRM
 
-Marketo Qualifier può riscrivere automaticamente gli aggiornamenti dello stato del lead in Salesforce e Microsoft Dynamics quando un potenziale cliente si sposta attraverso un flusso di lavoro in uscita, in modo che i rappresentanti non aggiornino più manualmente il CRM.
+Marketo Qualifier può riscrivere automaticamente gli aggiornamenti dello stato del lead in Salesforce e Microsoft Dynamics quando un potenziale cliente si sposta attraverso un flusso di lavoro in uscita, in modo che i rappresentanti non aggiornino più manualmente il sistema CRM.
 
 ### Funzionamento delle regole di sincronizzazione CRM
 
@@ -110,13 +123,14 @@ Il **[!UICONTROL Centro conoscenze]** consente al Account Qualification Agent (A
 
 ![Centro conoscenze](assets/knowledge-center.png){width="800" zoomable="yes"}
 
-1. Nel menu di navigazione a sinistra, espandi **[!UICONTROL Amministrazione]**, seleziona **[!UICONTROL Impostazioni amministratore]** e seleziona **[!UICONTROL Centro informazioni]**
-1. u
+1. Nel menu di navigazione a sinistra, espandi **[!UICONTROL Amministrazione]**, seleziona **[!UICONTROL Impostazioni amministratore]** e seleziona **[!UICONTROL Centro conoscenze]**.
 1. Imposta **[!UICONTROL Nome società]** e **[!UICONTROL URL società]** utilizzati da Marketo Qualifier per eseguire ricerche nell&#39;azienda e nella bozza di e-mail.
 1. Carica giochi di vendita, profili cliente ideali (ICP), guide di posizionamento e altro materiale promozionale in formato PDF, PPTX o DOCX.
 1. Seleziona **[!UICONTROL Genera playbook]**.
 
-In ogni documento caricato viene visualizzato il relativo stato di elaborazione, ad esempio **[!UICONTROL Pronto]**, e la data dell&#39;ultimo aggiornamento.
+La pagina mostra lo stato dell’ultimo playbook creato e fornisce l’azione successiva dopo il caricamento del contenuto. Per recuperare lo stato più recente dopo una compilazione, selezionare **[!UICONTROL Aggiorna]**.
+
+In ogni documento caricato viene inoltre visualizzato il relativo stato di elaborazione, ad esempio **[!UICONTROL Pronto]**, e la data dell&#39;ultimo aggiornamento.
 
 >[!NOTE]
 >

@@ -1,12 +1,12 @@
 ---
 title: Utilizzare la chat basata su IA
-description: Scopri come utilizzare la chat di IA in Adobe Marketo Qualifier per ricercare account, redigere proposte e ottenere risposte in base ai tuoi dati di gestione delle relazioni con i clienti, coinvolgimento e Knowledge Center.
+description: Scopri come utilizzare la chat basata su IA in [!DNL Adobe Marketo Qualifier] per ricercare account, creare proposte e ottenere risposte in base ai tuoi dati di gestione delle relazioni con i clienti, coinvolgimento e Knowledge Center.
 feature: Agentic AI, Sales Insights, Account Journeys
 role: User
 TQID: 'https://experienceleague.adobe.com/LHCHAk0rsNwLsKFhKMlHaLL7xkkCEAKFNDMEonb2TdQ'
 product_v2:
   - id: d98caee2-fd67-486e-9513-36435358ebff
-    internal-label: Sales Qualifier
+    internal-label: Adobe Marketo Qualifier
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -16,21 +16,21 @@ level_v2:
 topic_v2:
   - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
     internal-label: Artificial intelligence
-source-git-commit: d967b633fcb63c64169d3e3fbf305fd2ff82236d
+source-git-commit: 042ebc0019d33019940ff8ad98c0635cb97235f0
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '712'
 ht-degree: 1%
 ---
 
 # Chat basata su IA
 
-AI Chat risponde a domande in linguaggio naturale in base al contesto di vendita. Utilizzala per ricercare un account, prepararti per una chiamata, redigere una bozza di sensibilizzazione e assegnare una priorità al tuo lavoro senza uscire da Adobe Marketo Qualifier.
+AI Chat risponde a domande in linguaggio naturale in base al contesto di vendita. Utilizzalo per ricercare un account, prepararti per una chiamata, redigere una bozza di estensione e assegnare una priorità al tuo lavoro senza uscire da [!DNL Adobe Marketo Qualifier].
 
 ![Pulsante Chat AI](assets/ai-chat.png){width="800" zoomable="yes"}
 
 ## Apri chat IA
 
-Seleziona il pulsante mobile **[!UICONTROL Chat AI]** per aprire il pannello chat. Il pannello si apre accanto alla pagina corrente in modo da poter mantenere in visualizzazione un prospect, un account o un flusso di lavoro in uscita. Trascinate il bordo del pannello per ridimensionarlo. Per chiudere il pannello, seleziona di nuovo **[!UICONTROL Chat AI]**.
+Per aprire il pannello chat, selezionare il pulsante mobile **[!UICONTROL Chat IA]**. Il pannello si apre accanto alla pagina corrente in modo da poter mantenere in visualizzazione un prospect, un account o un flusso di lavoro in uscita. Per ridimensionare il pannello, trascinatene il bordo. Per chiudere il pannello, seleziona di nuovo **[!UICONTROL Chat AI]**.
 
 >[!NOTE]
 >
@@ -58,9 +58,9 @@ Utilizza la chat basata su IA per i seguenti tipi di attività:
 
 ## Chiedi ai chat tra i dati connessi
 
-La chat basata su IA può rispondere a domande relative al qualificatore Marketo, al sistema CRM, a [!DNL Marketo], a [!DNL Adobe Journey Optimizer B2B Edition] e ai dati di intelligence dell&#39;azienda. Poni una domanda in un linguaggio semplice per cercare informazioni o richiamare il contesto. La chat di IA legge e genera rapporti sui tuoi dati; non crea, modifica o avvia nulla.
+La chat basata su IA può rispondere a domande relative a [!DNL Marketo Qualifier], gestione delle relazioni con i clienti, [!DNL Marketo], [!DNL Marketo Optimizer] e dati di intelligence della società. Poni una domanda in linguaggio semplice per cercare informazioni o recuperare contesto. La chat di IA legge e genera rapporti sui tuoi dati; non crea, modifica o avvia nulla.
 
-Di seguito sono riportati alcuni esempi di prompt. Più si è specifici nel prompt, più i risultati saranno mirati.
+Di seguito sono riportati alcuni esempi di prompt. Più si è specifici nel prompt, più i risultati sono mirati.
 
 Clienti potenziali e account:
 
@@ -72,8 +72,8 @@ Clienti potenziali e account:
 
 Centro conoscenze:
 
-* &quot;Quali garanzie abbiamo sulla gestione delle obiezioni sui prezzi?&quot;
-* &quot;Quali sono i nostri principali vantaggi rispetto alla concorrenza?&quot;
+* &quot;Quali garanzie sono disponibili per la gestione delle obiezioni relative ai prezzi?&quot;
+* &quot;Quali sono i principali fattori di differenziazione rispetto alla concorrenza?&quot;
 * &quot;Elencare i documenti nel Knowledge Center.&quot;
 * &quot;Riepilogare un documento.&quot;
 
@@ -93,7 +93,7 @@ CRM:
 [!DNL Adobe Journey Optimizer B2B Edition]:
 
 * &quot;Quanti percorsi ho?&quot;
-* &quot;In che modo il mio pubblico viene segmentato per persona?&quot;
+* &quot;In che modo la persona segmenta il mio pubblico?&quot;
 * &quot;Quali pagine di destinazione esistono nel mio account?&quot;
 * &quot;Quali campi di lead vengono inseriti nel punteggio?&quot;
 
@@ -129,7 +129,7 @@ Le risposte generate dall’intelligenza artificiale possono essere imprecise. R
 * Leggi attentamente le e-mail redatte e personalizzale prima di inviarle.
 * Utilizza l’output dell’assistente come punto di partenza, non come risultato finale.
 
-L’utilizzo di AI Chat da parte della tua organizzazione è disciplinato dai termini di IA generativa di Adobe.
+I termini di IA generativa di Adobe disciplinano l’utilizzo della chat di IA da parte della tua organizzazione.
 
 >[!MORELIKETHIS]
 >

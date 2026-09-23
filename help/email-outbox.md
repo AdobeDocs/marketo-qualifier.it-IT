@@ -11,7 +11,7 @@ topic_v2:
     internal-label: Customer experience
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: d967b633fcb63c64169d3e3fbf305fd2ff82236d
+source-git-commit: 042ebc0019d33019940ff8ad98c0635cb97235f0
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%
@@ -33,10 +33,10 @@ Se non hai inviato alcuna e-mail, l&#39;elenco mostra _La tua casella in uscita 
 
 ## Leggi un’e-mail e le relative risposte
 
-Seleziona un messaggio e-mail nell’elenco per aprirlo a destra. La vista di lettura è costituita da tre parti:
+Per aprire un messaggio e-mail a destra, selezionalo nell’elenco. La vista di lettura è costituita da tre parti:
 
 * **Destinatario**: nome, qualifica e account del destinatario, se disponibili.
-* **Flusso di lavoro in uscita e oggetto**: l&#39;oggetto, il nome del [Flusso di lavoro in uscita](outbound-workflows.md) che ha inviato l&#39;e-mail e lo stato del flusso di lavoro in uscita. Seleziona il nome del flusso di lavoro in uscita per aprirlo.
+* **Flusso di lavoro in uscita e oggetto**: l&#39;oggetto, il nome del [Flusso di lavoro in uscita](outbound-workflows.md) che ha inviato l&#39;e-mail e lo stato del flusso di lavoro in uscita. Per aprire il flusso di lavoro in uscita, selezionarne il nome.
 * **Conversazione**: l&#39;e-mail inviata ed eventuali risposte in un thread. Ogni voce identifica se il messaggio è stato inviato o ricevuto e include una marca temporale.
 
 Le e-mail vengono riprodotte così come sono state inviate, incluso il contenuto personalizzato. Se il corpo di un messaggio non è disponibile, il qualificatore Marketo visualizza una breve nota _Contenuto e-mail non disponibile_.

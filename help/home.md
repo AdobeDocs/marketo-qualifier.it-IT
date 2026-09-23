@@ -1,6 +1,6 @@
 ---
-title: Panoramica dei qualificatori di Adobe Marketo
-description: Scopri Adobe Marketo Qualifier, un’app basata sull’intelligenza artificiale che automatizza la qualificazione dei potenziali clienti, la sensibilizzazione e il coinvolgimento degli acquirenti per i team di vendita B2B.
+title: Panoramica di [!DNL Adobe Marketo Qualifier]
+description: Scopri [!DNL Adobe Marketo Qualifier], un'app basata sull'intelligenza artificiale che automatizza la qualifica dei potenziali clienti, la portata e il coinvolgimento degli acquirenti per i team di vendita B2B.
 feature: Agentic AI, Sales Insights, Account Journeys
 role: User
 TQID: 'https://experienceleague.adobe.com/4IsAlgFBxddHCz0-CLCDXPCHI7m3motiXhgCR6MZq0k'
@@ -17,19 +17,19 @@ topic_v2:
     internal-label: Customer experience
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: d967b633fcb63c64169d3e3fbf305fd2ff82236d
+source-git-commit: 042ebc0019d33019940ff8ad98c0635cb97235f0
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 21%
+source-wordcount: '463'
+ht-degree: 18%
 ---
 
-# Qualificatore Marketo di Adobe
+# [!DNL Adobe Marketo Qualifier]
 
-Adobe Marketo Qualifier è un’applicazione basata sull’intelligenza artificiale che automatizza la qualifica del potenziale cliente, la divulgazione e il coinvolgimento degli acquirenti cross-channel per i rappresentanti dello sviluppo aziendale (BDR, Business Development Representative). Account Qualification Agent analizza i tuoi account e potenziali clienti, assegna le priorità a quelli pronti per il passaggio successivo e redige un’estensione personalizzata in base ai tuoi dati CRM.
+[!DNL Adobe Marketo Qualifier] è un&#39;app basata sull&#39;intelligenza artificiale che automatizza la qualificazione dei potenziali clienti, la diffusione e il coinvolgimento degli acquirenti cross-channel per i rappresentanti dello sviluppo aziendale (BDR, Business Development Representative). Account Qualification Agent analizza i tuoi account e potenziali clienti, assegna le priorità a quelli pronti per il passaggio successivo e redige un’estensione personalizzata in base ai tuoi dati CRM.
 
-I BDR possono utilizzare il browser e i plug-in e-mail per accedere alle informazioni aziendali direttamente nel proprio CRM o Outlook.
+L&#39;app fa parte della famiglia di prodotti [!DNL Marketo], insieme a [!DNL Marketo Engage], [!DNL Marketo Optimizer] e [!DNL Marketo Measure]. I BDR possono utilizzare il browser e i plug-in e-mail per accedere alle informazioni aziendali direttamente nel proprio CRM o Outlook.
 
-## Operazioni possibili in Marketo Qualifier
+## Operazioni possibili in [!DNL Marketo Qualifier]
 
 * **Assegna priorità a potenziali clienti e account** con riepiloghi di attività generati dall&#39;intelligenza artificiale e assegnazione di priorità basata su segnali.
 * **Crea flussi di lavoro in uscita basati su obiettivi** in cui AI propone una cadenza e redige e-mail personalizzate per ogni potenziale cliente.
@@ -39,13 +39,19 @@ I BDR possono utilizzare il browser e i plug-in e-mail per accedere alle informa
 * **Fai domande in linguaggio naturale** con la chat basata su IA, che utilizza i tuoi dati di gestione delle relazioni con i clienti, il coinvolgimento e il Knowledge Center.
 * **Tieni traccia delle prestazioni di outreach** con rapporti e-mail e prenotazione riunioni.
 
->[!VIDEO](https://video.tv.adobe.com/v/3476569?captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3476550)
+
+## Utilizzare la home page
+
+La home page rappresenta un punto di partenza per il lavoro quotidiano. Le indicazioni per la prima volta e i prompt di avvio consentono di aprire **[!UICONTROL Chat basata su IA]** e porre una domanda. I collegamenti rapidi ti portano direttamente a **[!UICONTROL Potenziali clienti]**, **[!UICONTROL Flussi di lavoro in uscita]** e **[!UICONTROL Attività]**.
+
+La pagina Home mostra anche le attività e i flussi di lavoro in uscita futuri. Nell&#39;elenco delle attività scegliere le attività di calendario o le attività suggerite dall&#39;agente in modo che sia possibile concentrarsi sul lavoro successivo.
 
 ## Scopri la guida
 
 ::::landing-cards-container
 :::card
-![icona](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=it)
+![icona](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Introduzione
 
@@ -55,7 +61,7 @@ Completa l’impostazione dell’amministratore una tantum per i gruppi di utent
 :::
 
 :::card
-![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=it)
+![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Potenziali clienti
 
@@ -65,7 +71,7 @@ Crea, filtra e controlla l’elenco di potenziali clienti.
 :::
 
 :::card
-![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=it)
+![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Account
 
@@ -75,7 +81,7 @@ Dai priorità all’estensione con pipeline a livello di account e dati di coinv
 :::
 
 :::card
-![icona](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=it)
+![icona](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Flussi di lavoro in uscita
 
@@ -85,7 +91,7 @@ Crea cadenze guidate da obiettivi con e-mail generate dall’intelligenza artifi
 :::
 
 :::card
-![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=it)
+![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Attività
 
@@ -95,7 +101,7 @@ Elabora le chiamate telefoniche, LinkedInMail e le attività di revisione e-mail
 :::
 
 :::card
-![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=it)
+![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Prestazioni
 
@@ -105,7 +111,7 @@ Verifica le prestazioni di e-mail e prenotazione riunioni.
 :::
 
 :::card
-![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=it)
+![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Centro conoscenze
 
@@ -115,7 +121,7 @@ Crea un playbook che attinga l’attività di intelligenza artificiale e l’ass
 :::
 
 :::card
-![icona](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=it)
+![icona](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Integrazioni
 
@@ -125,7 +131,7 @@ Connetti Salesforce o Microsoft Dynamics 365 e mappa i campi.
 :::
 
 :::card
-![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=it)
+![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Impostazioni profilo
 
@@ -135,7 +141,7 @@ Configura la disponibilità di e-mail, firma e calendario.
 :::
 
 :::card
-![icona](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=it)
+![icona](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Chat basata su IA
 
