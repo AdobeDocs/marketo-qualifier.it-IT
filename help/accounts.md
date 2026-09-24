@@ -14,9 +14,9 @@ topic_v2:
     internal-label: Customer experience
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: d967b633fcb63c64169d3e3fbf305fd2ff82236d
+source-git-commit: 042ebc0019d33019940ff8ad98c0635cb97235f0
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '647'
 ht-degree: 0%
 ---
 
@@ -50,7 +50,7 @@ La scheda **[!UICONTROL Dettagli]** fornisce un&#39;istantanea dell&#39;account 
 La scheda panoramica nella parte superiore della scheda identifica l’account e ne riepiloga il valore:
 
 * Il nome e l&#39;area geografica del conto
-* **Ricavi ricorrenti annuali (ARR)**: i ricavi ricorrenti annuali per tutti gli abbonamenti attivi. Selezionare **[!UICONTROL Visualizza tutto]** per esaminare ARR per prodotto nella finestra di dialogo **[!UICONTROL Ricavi ricorrenti annuali]**.
+* **Ricavi ricorrenti annuali (ARR)**: i ricavi ricorrenti annuali per tutti gli abbonamenti attivi. Per esaminare ARR per prodotto nella finestra di dialogo **[!UICONTROL Ricavi ricorrenti annuali]**, seleziona **[!UICONTROL Visualizza tutto]**.
 * Statistiche sui conti, inclusi i conteggi di opportunità aperte e contatti e il valore della pipeline
 
 ### Riepilogo panoramica account
@@ -63,7 +63,7 @@ Utilizza i pulsanti sotto la panoramica per passare da una visualizzazione all�
 
 | Visualizzazione | Cosa mostra |
 | --- | --- |
-| **[!UICONTROL Opportunità]** | Opportunità aperte collegate all’account, con campi chiave per ciascuna. Selezionare **[!UICONTROL Visualizza tutto]** per visualizzare l&#39;elenco completo in una tabella. I dettagli dell&#39;opportunità, quali l&#39;area di visualizzazione, il tipo e la data di chiusura, possono essere utilizzati anche per filtrare i contatti dell&#39;account in **[!UICONTROL Contatti opportunità personali]** quando un amministratore rende tali campi filtrabili. |
+| **[!UICONTROL Opportunità]** | Opportunità aperte collegate all’account, con campi chiave per ciascuna. Per visualizzare l&#39;elenco completo in una tabella, selezionare **[!UICONTROL Visualizza tutto]**. I dettagli dell&#39;opportunità, quali l&#39;area di visualizzazione, il tipo e la data di chiusura, possono essere utilizzati anche per filtrare i contatti dell&#39;account in **[!UICONTROL Contatti opportunità personali]** quando un amministratore rende tali campi filtrabili. |
 | **[!UICONTROL Membri principali]** | Contatti principali coinvolti dell’account, classificati per coinvolgimento. Ogni contatto mostra la propria qualifica, l’indirizzo e-mail, il punteggio di coinvolgimento e l’indicatore di urgenza. |
 | **[!UICONTROL Dati intento]** | Segnali di intento di acquisto per l’account, ad esempio i prodotti e gli argomenti di ricerca dell’account. |
 | **[!UICONTROL Membri team account]** | Persone assegnate all’account, con e-mail, qualifica, territorio e gruppo di prodotti. |
@@ -78,7 +78,7 @@ Dalla visualizzazione **[!UICONTROL Membri principali]**, eseguire una delle azi
 
 La scheda **[!UICONTROL Ricerca account]** contiene tre aree:
 
-* **[!UICONTROL Categorie di ricerca]**—Argomenti di ricerca. Selezionare una categoria per visualizzarne la ricerca nel riquadro centrale.
+* **[!UICONTROL Categorie di ricerca]**—Argomenti di ricerca. Per visualizzare la ricerca di una categoria nel riquadro centrale, selezionare la categoria.
 * **Contenuto ricerca**: schede di ricerca generate dall&#39;intelligenza artificiale raggruppate per categoria. Una scheda può includere il dominio di origine e le date in cui il segnale è stato rilevato per la prima volta e per l’ultima volta.
 * **[!UICONTROL Notizie recenti]** - Notizie aggiornate sull&#39;account, incluse date, tag e collegamenti di origine.
 

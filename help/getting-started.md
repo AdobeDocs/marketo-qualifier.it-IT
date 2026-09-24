@@ -21,7 +21,7 @@ topic_v2:
     internal-label: Insights
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d967b633fcb63c64169d3e3fbf305fd2ff82236d
+source-git-commit: 042ebc0019d33019940ff8ad98c0635cb97235f0
 workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 0%
@@ -58,7 +58,7 @@ Questi passaggi vengono eseguiti in Adobe Admin Console.
 1. Apri **[!UICONTROL Profili di prodotto assegnati]** e seleziona **[!UICONTROL Assegna profilo]**.
 1. Seleziona **[!UICONTROL Adobe Experience Platform]**.
 1. Seleziona il profilo di prodotto **[!UICONTROL Accesso predefinito a tutti i prodotti]**, seleziona **[!UICONTROL Applica]**, quindi seleziona **[!UICONTROL Salva]**.
-1. Apri **[!UICONTROL Utenti]** e seleziona **[!UICONTROL Aggiungi utenti]** per aggiungere tutti coloro che hanno bisogno di accedere a Marketo Qualifier.
+1. Per aggiungere tutti coloro che hanno bisogno di accedere a Marketo Qualifier, apri **[!UICONTROL Utenti]** e seleziona **[!UICONTROL Aggiungi utenti]**.
 
 ### Amministratori qualificatori Marketo
 
@@ -169,7 +169,7 @@ Un amministratore Microsoft Dynamics 365 o Azure registra un’applicazione e la
 
 ### Importa campi CRM
 
-Dopo aver connesso il CRM, configura il mapping in entrata per determinare quali campi del CRM vengono visualizzati nel Qualificatore Marketo. Nella scheda del sistema di gestione delle relazioni con i clienti connessa, seleziona **[!UICONTROL Gestisci]** per aprire **[!UICONTROL Mapping in entrata]**, quindi aggiungi una sezione per ogni tipo di entità di cui desideri importare i campi.
+Dopo aver connesso il CRM, configura il mapping in entrata per determinare quali campi del CRM vengono visualizzati nel Qualificatore Marketo. Per aprire **[!UICONTROL Inbound Mapping]**, seleziona **[!UICONTROL Gestisci]** nella scheda del sistema di gestione delle relazioni con i clienti connessa, quindi aggiungi una sezione per ogni tipo di entità di cui desideri importare i campi.
 
 Consulta [Mappatura dei campi CRM (mappatura in entrata)](integrations.md#map-crm-fields-inbound-mapping) per i passaggi completi, incluso come rendere disponibili i campi importati come filtri.
 

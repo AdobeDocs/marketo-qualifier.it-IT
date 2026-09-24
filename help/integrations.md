@@ -18,9 +18,9 @@ topic_v2:
     internal-label: Security
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: d967b633fcb63c64169d3e3fbf305fd2ff82236d
+source-git-commit: 042ebc0019d33019940ff8ad98c0635cb97235f0
 workflow-type: tm+mt
-source-wordcount: '1379'
+source-wordcount: '1383'
 ht-degree: 1%
 ---
 
@@ -58,7 +58,7 @@ Per impostazione predefinita, non è richiesta alcuna azione da parte dell’amm
 
 Se l’organizzazione ha disattivato il consenso degli utenti alle app di terze parti in Microsoft 365 o Microsoft Entra, un amministratore Microsoft 365 o Entra deve approvare Marketo Qualifier una volta per l’intera organizzazione. L&#39;amministratore completa l&#39;approvazione prima che i rappresentanti connettano i propri account di Outlook. Dopo l’approvazione a livello di organizzazione, ogni rappresentante può collegare il proprio account.
 
-### Gestione dei dati della cassetta postale da parte di Marketo Qualifier
+### Gestione dei dati delle cassette postali in Marketo Qualifier
 
 Marketo Qualifier legge solo le risposte alle e-mail inviate, non il resto della casella in entrata. Non memorizza gli allegati o le e-mail in arrivo al di fuori di un progetto attivo. Le credenziali di accesso archiviate sono crittografate.
 
@@ -91,7 +91,7 @@ Una scheda non configurata mostra **[!UICONTROL Connetti]**. Una scheda configur
 
 ### Connettere o modificare una connessione
 
-1. Sulla scheda del sistema di gestione delle relazioni con i clienti, seleziona **[!UICONTROL Connetti]** oppure **[!UICONTROL Altro]** > **[!UICONTROL Modifica configurazione]** per aggiornare una connessione esistente.
+1. Per creare una connessione, selezionare **[!UICONTROL Connetti]** nella scheda CRM. Per aggiornare una connessione esistente, selezionare **[!UICONTROL Altro]** > **[!UICONTROL Modifica configurazione]**.
 1. Immettere le credenziali dall&#39;amministratore del sistema CRM.
 
    >[!BEGINTABS]
@@ -119,7 +119,7 @@ Se Marketo Qualifier rifiuta le credenziali, identifica la causa, ad esempio cre
 ### Disconnettere una connessione
 
 1. Sulla scheda CRM connessa, selezionare **[!UICONTROL Altro]** > **[!UICONTROL Disconnetti]**.
-1. Rivedi l&#39;avviso e seleziona **[!UICONTROL Disconnetti]** per confermare.
+1. Rivedi l’avviso. Per confermare, selezionare **[!UICONTROL Disconnetti]**.
 
 >[!WARNING]
 >
@@ -146,7 +146,7 @@ La mappatura in entrata controlla quali campi CRM importa Marketo Qualifier e do
    | **[!UICONTROL Opportunità]** | I dettagli dell’opportunità dell’account. |
 
 1. Immettere un **[!UICONTROL nome sezione]** e una **[!UICONTROL descrizione]** facoltativa. Quindi, seleziona **[!UICONTROL Avanti]**.
-1. Nel passaggio **[!UICONTROL Aggiungi campo]**, cerca e seleziona i campi CRM da importare. Quindi, seleziona **[!UICONTROL Avanti]**. Ogni campo contiene **[!UICONTROL Nome visualizzato]**, **[!UICONTROL Nome campo]** e **[!UICONTROL Tipo dati]**.
+1. Nel passaggio **[!UICONTROL Aggiungi campo]**, per importare campi CRM, cercarli e selezionarli. Quindi, per continuare, seleziona **[!UICONTROL Avanti]**. Ogni campo contiene **[!UICONTROL Nome visualizzato]**, **[!UICONTROL Nome campo]** e **[!UICONTROL Tipo dati]**.
 1. Per le sezioni **[!UICONTROL Potenziali]**, **[!UICONTROL Contatti]** e **[!UICONTROL Opportunità]**, attiva **[!UICONTROL Filterabile]** per ogni campo necessario ai rappresentanti nell&#39;elenco [Potenziali](prospects.md).
 
    Un campo non può essere reso filtrabile se il relativo tipo di dati non supporta il filtro o se è già utilizzato in un’altra sezione.
