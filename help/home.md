@@ -39,7 +39,7 @@ L&#39;app fa parte della famiglia di prodotti [!DNL Marketo], insieme a [!DNL Ma
 * **Fai domande in linguaggio naturale** con la chat basata su IA, che utilizza i tuoi dati di gestione delle relazioni con i clienti, il coinvolgimento e il Knowledge Center.
 * **Tieni traccia delle prestazioni di outreach** con rapporti e-mail e prenotazione riunioni.
 
->[!VIDEO](https://video.tv.adobe.com/v/3476550)
+>[!VIDEO](https://video.tv.adobe.com/v/3476569?captions=ita)
 
 ## Utilizzare la home page
 
