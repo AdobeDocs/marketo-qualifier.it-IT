@@ -3,12 +3,22 @@ title: Note sulla versione di [!DNL Adobe Marketo Qualifier]
 description: Scopri le novità di [!DNL Adobe Marketo Qualifier].
 feature: Agentic AI, Sales Insights, Account Journeys
 role: User
-source-git-commit: 042ebc0019d33019940ff8ad98c0635cb97235f0
+source-git-commit: 3b50b4d3000696cb25ef747fefd579cfd3b3ba0f
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 14%
+source-wordcount: '532'
+ht-degree: 12%
 ---
 # Note sulla versione di [!DNL Adobe Marketo Qualifier]
+
+## 10-08-2026
+
+Questa versione include:
+
+* Riutilizzare un flusso di lavoro in uscita o modificare i punti di contatto di un flusso di lavoro in esecuzione, duplicarlo e modificare la copia. La copia viene avviata come bozza privata senza prospettive e il flusso di lavoro originale rimane invariato. [Ulteriori informazioni](outbound-workflows.md#duplicate-an-outbound-workflow).
+* Configura i flussi di lavoro in uscita in un layout compatto con la navigazione tra obiettivo, targeting, punti di contatto e impostazioni. [Ulteriori informazioni](outbound-workflows.md#create-an-outbound-workflow).
+* Le richieste di rinuncia chiare nelle risposte e-mail vengono riconosciute automaticamente. Il prospect è contrassegnato come rinuncia e non vengono inviati ulteriori punti di contatto. [Ulteriori informazioni](outbound-workflows.md#opt-out-requests-in-replies).
+* Preparati per le riunioni con un unico resoconto che combina ricerche web e casi di studio di clienti specifici per prodotto, con punti di discussione classificati in base alla rilevanza e alle fonti identificate. [Ulteriori informazioni](prospects.md#generate-meeting-prep).
+* Le e-mail generate vengono verificate in base alle linee guida sulla qualità e riscritte quando necessario prima di rivederle. Puoi comunque rivedere, modificare e approvare ogni e-mail prima che venga inviata. [Ulteriori informazioni](outbound-workflows.md#review-and-refine-generated-emails).
 
 ## 09-22-2026
 

@@ -3,20 +3,26 @@ title: Impostazioni di amministrazione
 description: Scopri come gestire i campi di gestione delle relazioni con i clienti, la sincronizzazione delle attività, la rinuncia alle e-mail e altre impostazioni di amministrazione [!DNL Adobe Marketo Qualifier].
 feature: Agentic AI, Sales Insights, Account Journeys
 role: Admin
-TQID: 'https://experienceleague.adobe.com/vbtO6I67ZEaZz3oio9InNErvq5D0wjbRxyDZpTq8Lzo'
-product_v2:
-  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
-    internal-label: CX Enterprise
-feature_v2:
-  - id: fc7979f3-56c3-43ca-9784-f1ea3dc69c4b
-    internal-label: Integrations
-  - id: fdbb8fc9-ffa3-4b86-88fe-aa4c5a3e1bc6
-    internal-label: Administration
-
 internal-label: Administration
-source-git-commit: 042ebc0019d33019940ff8ad98c0635cb97235f0
+autotag-review: '2026-10-08T17:58:28.029Z'
+TQID: 'https://experienceleague.adobe.com/2eccZWj1XY7qP20n6GcnBe6PZwNkp0ALhZfOhljwZF8'
+product_v2:
+  - id: d98caee2-fd67-486e-9513-36435358ebff
+    internal-label: Sales Qualifier
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
+  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+    internal-label: Customer profiles
+source-git-commit: 3b50b4d3000696cb25ef747fefd579cfd3b3ba0f
 workflow-type: tm+mt
-source-wordcount: '1221'
+source-wordcount: '1292'
 ht-degree: 0%
 ---
 
@@ -24,7 +30,7 @@ ht-degree: 0%
 
 Utilizza **[!UICONTROL Impostazioni amministratore]** per configurare le integrazioni CRM, gestire il Knowledge Center e configurare la rinuncia e-mail.
 
-[!DNL Adobe Marketo Qualifier] si connette a Salesforce o Microsoft Dynamics 365. La connessione offre a Account Qualification Agent (AQA) una visualizzazione coerente di lead, account, contatti, attività e proprietari. Marketo Qualifier può anche riscrivere le attività di outreach e lo stato di rinuncia al CRM e sincronizzare le attività di outreach con Marketo.
+[!DNL Adobe Marketo Qualifier] si connette a Salesforce o Microsoft Dynamics 365. La connessione offre a Account Qualification Agent (AQA) una visualizzazione coerente di lead, account, contatti, attività e proprietari. Marketo Qualifier può anche scrivere le attività di outreach e lo stato di rinuncia al CRM e sincronizzare le attività di outreach con Marketo.
 
 Per configurare le connessioni CRM, il mapping dei campi e la sincronizzazione delle attività, passare a **[!UICONTROL Amministrazione]** > **[!UICONTROL Impostazioni amministratore]** > **[!UICONTROL Connessioni CRM]**. Gli utenti standard possono utilizzare i dati e i filtri CRM configurati, ma non possono modificare queste impostazioni. Per connettere un CRM per la prima volta, vedere [Introduzione](getting-started.md#connect-your-crm).
 
@@ -34,7 +40,7 @@ Per configurare le connessioni CRM, il mapping dei campi e la sincronizzazione d
 
 ## MCP CRM e il plug-in incorporato
 
-Marketo Qualifier funziona con il tuo CRM in questi modi:
+Marketo Qualifier funziona con il tuo sistema di gestione delle relazioni con i clienti nei seguenti modi:
 
 * **Query MCP CRM**: Account Qualification Agent esegue query sui dati CRM in tempo reale in modo che le risposte e le informazioni riflettano lo stato corrente dei record.
 * **Plug-in incorporato**. Il plug-in CRM visualizza informazioni e dati di agente [!DNL Marketo Sales Insights] (MSI) nel CRM. Utilizzare il plug-in per aggiungere un prospect a [!DNL Marketo Qualifier].
@@ -55,7 +61,7 @@ Ogni lead può includere un&#39;anteprima e-mail di [!DNL Marketo], un collegame
 
 ## Ambito di accesso CRM
 
-Il qualificatore Marketo legge gli utenti, i contatti, le mappature dei proprietari, i lead, gli account, le opportunità e le attività dal CRM. Scrive solo le attività di outreach registrate e lo stato di rinuncia al CRM e sincronizza le attività di outreach con Marketo. L’amministratore del sistema di gestione delle relazioni con i clienti prepara l’accesso API in Salesforce o Dynamics. Un amministratore di Marketo Qualifier connette quindi il CRM, esegue il mapping dei campi in entrata e sceglie se sincronizzare le attività.
+Marketo Qualifier legge gli utenti, i contatti, le mappature dei proprietari, i lead, gli account, le opportunità e le attività dal CRM. Scrive solo le attività di outreach registrate e lo stato di rinuncia al CRM e sincronizza le attività di outreach con Marketo. L’amministratore del sistema di gestione delle relazioni con i clienti prepara l’accesso API in Salesforce o Dynamics. Un amministratore di Marketo Qualifier connette quindi il sistema CRM, mappa i campi in entrata e sceglie se sincronizzare le attività.
 
 >[!NOTE]
 >
@@ -63,7 +69,7 @@ Il qualificatore Marketo legge gli utenti, i contatti, le mappature dei propriet
 
 ## Mappa campi CRM (mappatura in entrata)
 
-Dopo aver connesso il CRM, selezionare **[!UICONTROL Gestisci]** per la connessione e aprire **[!UICONTROL Mappatura in entrata]**. La mappatura in entrata controlla quali campi CRM richiama Marketo Qualifier nell’applicazione.
+Dopo aver connesso il CRM, selezionare **[!UICONTROL Gestisci]** per la connessione e aprire **[!UICONTROL Mappatura in entrata]**. La mappatura in entrata controlla quali campi di gestione delle relazioni con i clienti vengono estratti da Marketo Qualifier nell’applicazione.
 
 1. Selezionare **[!UICONTROL Aggiungi sezione]**.
 1. Immettere un nome e una descrizione per la sezione.
@@ -119,12 +125,12 @@ Con le regole di sincronizzazione CRM configurate, i team di vendita visualizzan
 
 ## Crea un playbook per un Knowledge Center {#knowledge-center}
 
-Il **[!UICONTROL Centro conoscenze]** consente al Account Qualification Agent (AQA) di accedere ai materiali di vendita. Marketo Qualifier utilizza questi materiali per generare ricerche, approfondimenti sulle qualifiche e campagne informative che riflettono il modo in cui l’organizzazione vende. Solo gli amministratori possono creare e gestire la playbook.
+Il **[!UICONTROL Centro conoscenze]** consente al Account Qualification Agent (AQA) di accedere ai materiali di vendita. Marketo Qualifier utilizza questi materiali per generare ricerche, approfondimenti sulle qualifiche e attività di sensibilizzazione che riflettono il modo in cui l’organizzazione vende. Solo gli amministratori possono creare e gestire la playbook.
 
 ![Centro conoscenze](assets/knowledge-center.png){width="800" zoomable="yes"}
 
 1. Nel menu di navigazione a sinistra, espandi **[!UICONTROL Amministrazione]**, seleziona **[!UICONTROL Impostazioni amministratore]** e seleziona **[!UICONTROL Centro conoscenze]**.
-1. Imposta **[!UICONTROL Nome società]** e **[!UICONTROL URL società]** utilizzati da Marketo Qualifier per eseguire ricerche nell&#39;azienda e nella bozza di e-mail.
+1. Imposta **[!UICONTROL Nome società]** e **[!UICONTROL URL società]** utilizzati da Marketo Qualifier per eseguire ricerche nella società e bozze di e-mail.
 1. Carica giochi di vendita, profili cliente ideali (ICP), guide di posizionamento e altro materiale promozionale in formato PDF, PPTX o DOCX.
 1. Seleziona **[!UICONTROL Genera playbook]**.
 
@@ -138,7 +144,7 @@ In ogni documento caricato viene inoltre visualizzato il relativo stato di elabo
 
 Quando il playbook è pronto, i rappresentanti possono utilizzarlo in due posizioni:
 
-* **Prompt e-mail in uscita** - In un prompt punto di contatto, assegnare un nome al documento e descrivere il contesto da utilizzare. Immettere ad esempio `Use the ABC positioning guide from the Knowledge Center and focus on the security value proposition`. Consulta [Generare e rivedere i punti di contatto](outbound-workflows.md#step-3-generate-and-review-touchpoints).
+* **Prompt e-mail in uscita** - In un prompt punto di contatto, assegnare un nome al documento e descrivere il contesto da utilizzare. Immettere ad esempio `Use the ABC positioning guide from the Knowledge Center and focus on the security value proposition`. Consulta [Configurare i punti di contatto](outbound-workflows.md#step-3-generate-and-review-touchpoints).
 * **Chat AI**: fare riferimento al Centro informazioni nella domanda. Immettere ad esempio `From the Knowledge Center, help me position our security solution for ABC Corp before tomorrow's call`. Vedi [Chat AI](ai-assistant.md).
 
 In entrambi i casi, il contenuto generato riflette i messaggi nel playbook anziché la ricerca generica.
@@ -152,7 +158,7 @@ In entrambi i casi, il contenuto generato riflette i messaggi nel playbook anzic
 
 Le impostazioni vengono salvate automaticamente.
 
-Quando un prospect seleziona il collegamento, Marketo Qualifier smette di inviare e-mail a tale prospect e sincronizza lo stato di rinuncia al CRM connesso.
+Quando un prospect seleziona il collegamento, Marketo Qualifier interrompe l’invio di e-mail al prospect e sincronizza lo stato di rinuncia al CRM connesso. Marketo Qualifier riconosce inoltre chiare richieste di rinuncia nella risposta e-mail di un potenziale cliente, ad esempio &quot;smetti di inviarmi e-mail&quot; o &quot;annulla l’abbonamento&quot;, e contrassegna il potenziale cliente come automaticamente escluso. Vengono applicati gli stessi **[!UICONTROL stati e badge di rinuncia]** e non vengono inviati ulteriori punti di contatto. Non sono necessarie configurazioni aggiuntive. Le risposte che non richiedono chiaramente di interrompere, come ad esempio &quot;non al momento&quot;, non vengono trattate come rinunce. Vedi [Richieste di rinuncia nelle risposte](outbound-workflows.md#opt-out-requests-in-replies).
 
 ## Riferimento: parametri API di esempio
 
