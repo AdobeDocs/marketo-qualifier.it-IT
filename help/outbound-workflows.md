@@ -5,8 +5,8 @@ feature: Agentic AI, Sales Insights, Account Journeys
 role: User
 TQID: 'https://experienceleague.adobe.com/n3FbuiM2zF9QSqaKx1bhBSdbsf-w7vEsEGjCQTBo3g4'
 product_v2:
-  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
-    internal-label: CX Enterprise
+  - id: d98caee2-fd67-486e-9513-36435358ebff
+    internal-label: Sales Qualifier
 feature_v2:
   - id: fc7979f3-56c3-43ca-9784-f1ea3dc69c4b
     internal-label: Integrations
@@ -19,9 +19,9 @@ topic_v2:
     internal-label: Personalization
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 042ebc0019d33019940ff8ad98c0635cb97235f0
+source-git-commit: 3b50b4d3000696cb25ef747fefd579cfd3b3ba0f
 workflow-type: tm+mt
-source-wordcount: '2271'
+source-wordcount: '2692'
 ht-degree: 0%
 ---
 
@@ -56,27 +56,27 @@ Le sezioni seguenti spiegano come creare un flusso di lavoro in uscita, esaminar
 
 ## Creare un flusso di lavoro in uscita
 
-La procedura guidata Flusso di lavoro in uscita prevede cinque passaggi: **[!UICONTROL Obiettivo]**, **[!UICONTROL Targeting]**, **[!UICONTROL Generazione punti di contatto]**, **[!UICONTROL Impostazioni]** e **[!UICONTROL Aggiungi potenziali]**. L&#39;obiettivo determina i passaggi rimanenti.
+L’esperienza di configurazione compatta organizza la configurazione del flusso di lavoro intorno a obiettivo, targeting, punti di contatto e impostazioni. Utilizza la navigazione della sezione per spostarti tra di essi. Dopo aver salvato il flusso di lavoro, aggiungi i potenziali clienti per generare le e-mail.
 
 1. Nel menu di navigazione a sinistra, seleziona **[!UICONTROL Flussi di lavoro in uscita]**.
 1. Nella scheda **[!UICONTROL Sfoglia]**, seleziona **[!UICONTROL + Crea flusso di lavoro in uscita]** nell&#39;angolo superiore destro.
 
 Gli amministratori possono assegnare il flusso di lavoro in uscita a un compagno di team anziché a se stessi. Prima di avviare il flusso di lavoro, seleziona **[!UICONTROL Assegna utente]** dal menu a discesa e scegli il compagno di squadra.
 
-### Passaggio 1: definire l’obiettivo
+### Definire l’obiettivo {#step-1-define-your-goal}
 
 L’obiettivo definisce il risultato previsto e guida il targeting, la cadenza e la generazione di e-mail.
 
 1. Per scrivere il tuo obiettivo, seleziona **[!UICONTROL Inizia da zero]** oppure per utilizzare un modello salvato, seleziona **[!UICONTROL Inizia da modello]**.
 
 1. Seleziona uno dei **[!UICONTROL obiettivi consigliati]** corrispondenti alla tua azienda. Ogni raccomandazione include una breve spiegazione del perché. Per completare l’obiettivo, seleziona un consiglio. Per sfogliare l&#39;intero set di consigli, seleziona **[!UICONTROL Visualizza tutti]** oppure inserisci un obiettivo personalizzato. Puoi anche scegliere dall&#39;elenco **[!UICONTROL Obiettivi popolari]**.
-1. Seleziona **[!UICONTROL Successivo: Targeting]**.
+1. Continua con il targeting.
 
 Indica un risultato specifico nell’obiettivo. Ad esempio, immettere `Book a 15-minute discovery call with marketing leaders evaluating campaign automation` anziché `Promote campaign automation`.
 
 L’intelligenza artificiale mantiene i requisiti nell’obiettivo esattamente nei punti di contatto generati. Includi frasi esatte, righe di apertura o chiusura necessarie, sessioni e date denominate o una struttura specifica quando il contenuto generato deve mantenerle.
 
-### Passaggio 2: configurare i filtri di targeting
+### Configurare i filtri di targeting {#step-2-configure-targeting-filters}
 
 I filtri di targeting definiscono quali potenziali clienti sono idonei. Quando si aggiungono i potenziali clienti in un secondo momento, nell&#39;elenco di selezione vengono visualizzati solo i potenziali clienti che corrispondono a questi filtri.
 
@@ -89,7 +89,7 @@ Descrivi il tuo potenziale cliente ideale nel linguaggio naturale. Immettere ad 
 1. Imposta i valori per il filtro.
 1. Aggiungi altri filtri per restringere il pubblico.
 
-1. Seleziona **[!UICONTROL Avanti: genera punti di contatto]**.
+1. Continua con i punti di contatto.
 
 Il targeting può utilizzare il tipo di attività, il punteggio, la valutazione e altri attributi disponibili. Combinare i criteri con [!DNL AND] o [!DNL OR] e utilizzare operatori quali è uguale a, contiene, maggiore di, minore di e tra.
 
@@ -106,9 +106,11 @@ L’iscrizione automatica segue questa sequenza:
 
 Se un altro rappresentante sta già contattando il prospect, [!DNL Marketo Qualifier] visualizza un avviso prima dell&#39;avvio dell&#39;outreach duplicato.
 
-### Passaggio 3: generare e rivedere i punti di contatto
+### Configurare i punti di contatto {#step-3-generate-and-review-touchpoints}
 
 Dopo aver configurato il targeting, l’intelligenza artificiale analizza l’obiettivo e i criteri di targeting, definisce la cadenza e scrive un prompt per ogni punto di contatto. La cadenza può includere passaggi e-mail, telefonata e LinkedInMail.
+
+I punti di contatto utilizzano un layout di sequenza che semplifica la scansione dell’ordine dei passaggi.
 
 ![Punti di contatto](assets/create-workflow-touchpoints.png){width="800" zoomable="yes"}
 
@@ -132,13 +134,13 @@ Imposta un ritardo del punto di contatto in giorni, ore e minuti. Imposta giorni
 
 Se l&#39;organizzazione ha creato un playbook del [Centro informazioni](admin-settings.md#knowledge-center), fare riferimento al file nel prompt. Denomina il documento e descrivi il contesto da utilizzare. Immettere ad esempio `Use the ABC positioning guide from the Knowledge Center and focus on the security value proposition`.
 
-Quando la cadenza e i prompt sono pronti, selezionare **[!UICONTROL Avanti: Impostazioni]**.
+Quando la cadenza e i prompt sono pronti, continua con le impostazioni.
 
 Affina i prompt dei punti di contatto prima di generare le e-mail dei potenziali clienti. IA utilizza questi prompt per ogni prospect selezionato.
 
-### Passaggio 4: configurare le impostazioni del flusso di lavoro in uscita
+### Configurare le impostazioni del flusso di lavoro in uscita {#step-4-configure-outbound-workflow-settings}
 
-Il passaggio **[!UICONTROL Impostazioni]** controlla il modo in cui viene eseguito il flusso di lavoro in uscita.
+La sezione **[!UICONTROL Impostazioni]** controlla il funzionamento del flusso di lavoro in uscita.
 
 ![Pannello impostazioni](assets/create-workflow-settings.png){width="800" zoomable="yes"}
 
@@ -150,15 +152,15 @@ Il passaggio **[!UICONTROL Impostazioni]** controlla il modo in cui viene esegui
 1. Per interrompere automaticamente i punti di contatto di follow-up quando un prospect registra una riunione, attivare **[!UICONTROL Pausa prenotazione riunione]**.
 1. Scegli se utilizzare il fuso orario di ogni prospect o il flusso di lavoro in uscita **[!UICONTROL Fuso orario]** per la tempistica di invio. Se utilizzi il fuso orario del flusso di lavoro in uscita, verifica che corrisponda al pubblico.
 1. In **[!UICONTROL Autorizzazioni]**, mantieni **[!UICONTROL Privato]** (impostazione predefinita) o seleziona **[!UICONTROL Condiviso con tutti]**. Per ulteriori dettagli, vedere [Condividere un flusso di lavoro in uscita](#share-an-outbound-workflow).
-1. Seleziona **[!UICONTROL Salva e aggiungi prospect]**.
+1. Seleziona **[!UICONTROL Salva e aggiungi prospect]** per aprire la visualizzazione di selezione del prospect.
 
 Per ripristinare i valori predefiniti della finestra di invio, del fuso orario, dei giorni, delle regole di completamento e fuori sede, della visibilità e della cadenza dei suggerimenti, attivare **[!UICONTROL Ripristina impostazioni predefinite]**. Il nome del flusso di lavoro in uscita viene lasciato invariato.
 
 Un amministratore configura il piè di pagina di rinuncia a livello globale, che si applica alle e-mail in uscita indipendentemente dalle impostazioni del flusso di lavoro in uscita. Consulta [Configurare la rinuncia e-mail globale](integrations.md#configure-global-email-opt-out).
 
-### Passaggio 5: aggiungere potenziali clienti e avviare la generazione di e-mail
+### Aggiungi potenziali clienti e avvia la generazione di e-mail {#step-5-add-prospects-and-start-email-generation}
 
-Il salvataggio apre la vista di selezione del prospect con i filtri di targeting del passaggio 2 applicati.
+Dopo il salvataggio, aggiungi i potenziali clienti dalla vista di selezione. Vengono applicati i filtri di targeting configurati.
 
 1. Rivedi l&#39;elenco.
 
@@ -179,6 +181,15 @@ Le e-mail possono anche essere generate nel linguaggio del potenziale cliente, c
 ## Rivedere e perfezionare le e-mail generate
 
 Al termine della generazione, nella vista dei dettagli Flusso di lavoro in uscita viene richiesto di esaminare le bozze. [!DNL Marketo Qualifier] non invia l&#39;e-mail finché non la approvi.
+
+Prima che una bozza venga visualizzata per la revisione, [!DNL Marketo Qualifier] la verifica in base alle linee guida per la qualità. Se non è sufficiente, la bozza viene riscritta utilizzando un feedback specifico e selezionata nuovamente. Le stesse linee guida informano la prima bozza, quindi la maggior parte delle e-mail le incontra al primo passaggio. I controlli garantiscono che:
+
+* Il corpo dell’e-mail contiene solo il messaggio per il potenziale cliente, senza note interne, ragionamento o riferimenti all’origine.
+* Una convocazione di riunione viene visualizzata solo quando il calendario è connesso in [Impostazioni profilo](profile-settings.md), è disponibile un collegamento di prenotazione e il prompt dei punti di contatto richiede una convocazione di riunione.
+* Gli elenchi puntati vengono formattati correttamente.
+* L’e-mail evita i pattern di suono dell’intelligenza artificiale più comuni, tra cui lineette, elenchi di tre utilizzati per il ritmo, frasi &quot;non solo X, ma Y&quot; e cliché sovrautilizzati.
+
+Puoi comunque rivedere, modificare e approvare ogni e-mail prima che venga inviata. Il ragionamento, le modifiche dirette e **[!UICONTROL Genera con IA]** funzionano come prima.
 
 1. Nella visualizzazione dei dettagli del flusso di lavoro in uscita, selezionare **[!UICONTROL Rivedi bozze]** nel banner.
 1. Il passaggio **[!UICONTROL Rivedi punti di contatto]** ha due schede:
@@ -233,7 +244,7 @@ Ogni flusso di lavoro in uscita ha un&#39;impostazione **[!UICONTROL Autorizzazi
 >
 >La condivisione è permanente. Dopo che un flusso di lavoro in uscita è impostato su **[!UICONTROL Condiviso con tutti]**, non può essere ripristinato su **[!UICONTROL Privato]**.
 
-In un flusso di lavoro in uscita condiviso, i team possono registrare i propri potenziali clienti. Ogni persona può gestire o mettere in pausa solo i potenziali clienti a cui è iscritta, incluso l’utilizzo di azioni in blocco. Solo il proprietario del flusso di lavoro in uscita può modificare le impostazioni a livello di piano, tra cui pianificazione, fuso orario e cadenza. Queste impostazioni sono di sola lettura per i colleghi.
+In un flusso di lavoro in uscita condiviso, i team possono registrare i propri potenziali clienti. Ogni persona può gestire o mettere in pausa solo i potenziali clienti a cui è iscritta, incluso l’utilizzo di azioni in blocco. Solo il proprietario del flusso di lavoro in uscita può modificare le impostazioni a livello di piano, ad esempio la finestra di invio e il fuso orario. Queste impostazioni sono di sola lettura per i colleghi. Per modificare i punti di contatto in un flusso di lavoro in uscita in esecuzione, duplicalo e modifica la copia.
 
 Quando iscrivi i potenziali clienti in un flusso di lavoro in uscita condiviso, scegli se il messaggio e-mail viene inviato come proprietario del flusso di lavoro o come rappresentante assegnato di ciascun lead.
 
@@ -249,9 +260,23 @@ Quando un potenziale cliente risponde con un messaggio fuori sede, il flusso di 
 * **Ripresa automatica**: attivata per impostazione predefinita. Se la risposta fuori sede include una data di ritorno, il flusso di lavoro in uscita riprende la cadenza in tale data. Se non viene specificata una data di ritorno, il flusso di lavoro in uscita riprende dopo un buffer di ripresa dopo configurabile dal team.
 * **Opzioni manuali**: un rappresentante può comunque selezionare **[!UICONTROL Riprendi ora]** o pianificare una data di ripresa specifica. Vedi [Gestione dei flussi di lavoro in uscita esistenti](#manage-existing-outbound-workflows).
 
+### Richieste di rinuncia nelle risposte
+
+Quando un potenziale cliente risponde con una chiara richiesta di interrompere la ricezione di messaggi di posta elettronica, ad esempio &quot;smetti di inviarmi&quot;, &quot;annulla l&#39;iscrizione&quot;, &quot;rimuovimi dall&#39;elenco&quot; o &quot;cancellami dall&#39;elenco&quot;, [!DNL Marketo Qualifier] contrassegna automaticamente il potenziale cliente come rifiutato. Lo stato e il badge di **[!UICONTROL Rinuncia]** sono uguali a quelli della selezione del collegamento di rinuncia e non vengono inviati ulteriori punti di contatto. Qualsiasi aggiornamento di stato del CRM configurato funziona come per un collegamento di rinuncia.
+
+Solo le richieste di cancellazione vengono conteggiate. Ad esempio, &quot;Non sono la persona giusta&quot; o &quot;Non al momento&quot; viene gestito come qualsiasi altra risposta, non come rinuncia. Non è necessaria alcuna configurazione; le rinunce di risposta funzionano insieme al collegamento di rinuncia configurato in [Impostazioni amministratore](admin-settings.md#configure-global-email-opt-out).
+
+## Duplicare un flusso di lavoro in uscita
+
+Puoi duplicare un flusso di lavoro in uscita creato o condiviso con te. Duplicarlo dall&#39;elenco dei flussi di lavoro in uscita della scheda **[!UICONTROL Sfoglia]** o dalla visualizzazione dei dettagli del flusso di lavoro.
+
+La copia include l’obiettivo originale, il targeting, i punti di contatto e le impostazioni, ma non i relativi prospect. La copia inizia come **[!UICONTROL Bozza]** con autorizzazioni **[!UICONTROL Privato]**, in modo da poterla rivedere e modificare prima di aggiungere potenziali clienti o condividerla. Il flusso di lavoro originale e i relativi prospect non subiscono modifiche.
+
+Per modificare i punti di contatto di un flusso di lavoro in uscita in esecuzione, duplicalo e modifica la copia. Aggiungi i potenziali clienti alla copia; i potenziali clienti già iscritti all’originale continuano a seguire la cadenza senza interruzioni. Ogni flusso di lavoro ha i propri risultati in [Prestazioni in uscita](performance.md).
+
 ## Gestisci flussi di lavoro in uscita esistenti
 
-Nella pagina **[!UICONTROL Flussi di lavoro in uscita]**, la scheda **[!UICONTROL Sfoglia]** elenca tutti i flussi di lavoro in uscita disponibili. Ogni scheda mostra l’obiettivo, i punti di contatto configurati e le metriche delle prestazioni. Utilizzare questa visualizzazione per monitorare i flussi di lavoro in uscita, esaminare le bozze o aggiungere potenziali clienti.
+Nella pagina **[!UICONTROL Flussi di lavoro in uscita]**, la scheda **[!UICONTROL Sfoglia]** elenca tutti i flussi di lavoro in uscita disponibili. Ogni scheda mostra l’obiettivo, i punti di contatto configurati e le metriche delle prestazioni. Utilizzare questa visualizzazione per monitorare i flussi di lavoro in uscita, esaminare le bozze, aggiungere potenziali clienti o duplicare un flusso di lavoro.
 
 ## Posta in uscita e-mail
 

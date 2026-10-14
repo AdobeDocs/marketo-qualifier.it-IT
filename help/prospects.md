@@ -5,8 +5,8 @@ feature: Agentic AI, Sales Insights, Account Journeys
 role: User
 TQID: 'https://experienceleague.adobe.com/zf2H5rq1JlIT26LqLPMrm2Mq3tSIrLOiTEw6BXb1w2U'
 product_v2:
-  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
-    internal-label: CX Enterprise
+  - id: d98caee2-fd67-486e-9513-36435358ebff
+    internal-label: Sales Qualifier
 feature_v2:
   - id: fc7979f3-56c3-43ca-9784-f1ea3dc69c4b
     internal-label: Integrations
@@ -15,9 +15,9 @@ topic_v2:
     internal-label: Customer experience
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 2124387555f5fb08ea19eaf121fc87aa66d66de2
+source-git-commit: 3b50b4d3000696cb25ef747fefd579cfd3b3ba0f
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '852'
 ht-degree: 1%
 ---
 
@@ -106,8 +106,12 @@ Per aprire il profilo di un prospect, selezionarlo. Rivedi i segnali importanti 
 
 Oltre al riepilogo permanente della persona di intelligenza artificiale, puoi generare una preparazione della riunione personalizzata per una chiamata specifica in arrivo dalla scheda **[!UICONTROL Ricerca riunione]**, accanto a **[!UICONTROL Ricerca account]**.
 
+La preparazione degli incontri combina ricerche sul Web relative al potenziale cliente e alla sua azienda con le evidenze provenienti da casi aziendali sui clienti peer che utilizzano il prodotto che stai vendendo. I punti di discussione dei casi di studio possono includere risultati misurabili per i clienti. Le fonti sono riunite in un&#39;unica sintesi, con punti di discussione classificati per rilevanza. Ogni punto di discussione identifica se proviene da studi di casi, ricerche web, o entrambi. Se non è disponibile alcuna evidenza rilevante di un caso di studio, la preparazione della riunione utilizza la ricerca web.
+
 * **Basato su obiettivo** - Se il prospect è iscritto a un flusso di lavoro in uscita in esecuzione, selezionarlo. La preparazione è allineata all’obiettivo del flusso di lavoro in uscita, ad esempio la prenotazione di una riunione o il coinvolgimento del potenziale cliente.
 * **Prompt personalizzato**: immettere gli elementi per cui si desidera prepararsi, ad esempio `Focus on renewal risk` o `Prepare for a technical deep dive with their IT lead`. La preparazione corrisponde al prompt. L’opzione di richiesta personalizzata è disponibile ogni volta che il prospect non si trova in un flusso di lavoro in uscita in esecuzione.
+
+La descrizione continua a seguire l’obiettivo del flusso di lavoro in uscita o il prompt personalizzato scelto. La modalità di generazione della preparazione delle riunioni non viene modificata.
 
 >[!MORELIKETHIS]
 >

@@ -1,12 +1,12 @@
 ---
-title: Guida introduttiva ad Adobe Marketo Qualifier
-description: Scopri come completare la configurazione amministratore una tantum per Adobe Marketo Qualifier, inclusi i gruppi di utenti e una connessione di gestione delle relazioni con i clienti, prima che il team inizi a utilizzare l’applicazione.
+title: Introduzione a Adobe Marketo Qualifier
+description: Scopri come completare la configurazione dell’amministratore una tantum per Adobe Marketo Qualifier, inclusi i gruppi di utenti e una connessione di gestione delle relazioni con i clienti, prima che il team inizi a utilizzare l’applicazione.
 feature: Agentic AI, Sales Insights, Account Journeys
 role: Admin
 TQID: 'https://experienceleague.adobe.com/-nfmFwZyZFUZhm-uQUjSyTvrORuqJgKSKnENWYtvubs'
 product_v2:
-  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
-    internal-label: CX Enterprise
+  - id: d98caee2-fd67-486e-9513-36435358ebff
+    internal-label: Sales Qualifier
 feature_v2:
   - id: fc7979f3-56c3-43ca-9784-f1ea3dc69c4b
     internal-label: Integrations
@@ -21,17 +21,17 @@ topic_v2:
     internal-label: Insights
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 042ebc0019d33019940ff8ad98c0635cb97235f0
+source-git-commit: 3b50b4d3000696cb25ef747fefd579cfd3b3ba0f
 workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 0%
 ---
 
-# Guida introduttiva ad Adobe Marketo Qualifier
+# Introduzione a Adobe Marketo Qualifier
 
-Dopo il provisioning di Adobe Marketo Qualifier per l&#39;organizzazione, un amministratore di sistema [!DNL Marketo] deve creare i gruppi di utenti richiesti e connettere Salesforce o Microsoft Dynamics 365.
+Dopo che Adobe esegue il provisioning di Marketo Qualifier per la tua organizzazione, un amministratore di sistema [!DNL Marketo] deve creare i gruppi di utenti richiesti e connettere Salesforce o Microsoft Dynamics 365.
 
-![Home page del qualificatore Marketo](assets/homepage.png){width="800" zoomable="yes"}
+![Home page di Marketo Qualifier](assets/homepage.png){width="800" zoomable="yes"}
 
 ## Configurare i gruppi di utenti
 
@@ -46,7 +46,7 @@ Per informazioni sulla configurazione dei gruppi, consulta la [documentazione di
 >* Essere amministratore organizzazione con accesso a **[!UICONTROL Admin Console]** dal commutatore di app Adobe.
 >* Essere assegnato al prodotto Adobe Experience Platform o essere amministratore di sistema. In caso contrario, Adobe Experience Platform non viene visualizzato nell’elenco dei prodotti.
 
-### Utenti qualificatore Marketo
+### Utenti Marketo Qualifier
 
 Gli utenti devono appartenere al gruppo di utenti `Marketo Qualifier` per accedere all&#39;applicazione.
 
@@ -60,7 +60,7 @@ Questi passaggi vengono eseguiti in Adobe Admin Console.
 1. Seleziona il profilo di prodotto **[!UICONTROL Accesso predefinito a tutti i prodotti]**, seleziona **[!UICONTROL Applica]**, quindi seleziona **[!UICONTROL Salva]**.
 1. Per aggiungere tutti coloro che hanno bisogno di accedere a Marketo Qualifier, apri **[!UICONTROL Utenti]** e seleziona **[!UICONTROL Aggiungi utenti]**.
 
-### Amministratori qualificatori Marketo
+### Amministratori Marketo Qualifier
 
 Gli amministratori che configurano le connessioni CRM, il [Centro informazioni](admin-settings.md#knowledge-center) e le impostazioni di rinuncia e-mail globali devono appartenere anche al gruppo di utenti `Marketo Qualifier Admins`.
 
@@ -77,7 +77,7 @@ I nomi dei gruppi di utenti devono corrispondere esattamente come mostrato nei p
 
 ## Connetti il tuo CRM
 
-Marketo Qualifier si connette a Salesforce o Microsoft Dynamics 365 per fornire ai BDR una visualizzazione unificata di utenti, lead, contatti, account, opportunità, mapping di proprietari e attività correlate. La connessione iniziale richiede l&#39;accesso in sola lettura a questi dati CRM. Per preparare le credenziali prima di connettere Marketo Qualifier, rivolgiti al tuo amministratore CRM. Consulta [Integrazioni](integrations.md) per i dettagli di integrazione.
+Marketo Qualifier si connette a Salesforce o Microsoft Dynamics 365 per fornire ai BDR una visualizzazione unificata di utenti, lead, contatti, account, opportunità, mapping dei proprietari e attività correlate. La connessione iniziale richiede l&#39;accesso in sola lettura a questi dati CRM. Per preparare le credenziali prima di connettere Marketo Qualifier, rivolgiti al tuo amministratore CRM. Consulta [Integrazioni](integrations.md) per i dettagli di integrazione.
 
 >[!PREREQUISITES]
 >
@@ -128,7 +128,7 @@ I passaggi sono leggermente diversi da quelli qui descritti. Per ulteriori infor
 ### Trovare l’URL dell’istanza di Salesforce
 
 1. Accedi e annota il sottodominio _Dominio personale_ dell&#39;organizzazione dalla barra degli indirizzi del browser (il valore `{{mydomain}}`).
-1. Utilizzare il modulo canonico per il qualificatore Marketo: `https://{{mydomain}}.my.salesforce.com`.
+1. Utilizzare il modulo canonico per Marketo Qualifier: `https://{{mydomain}}.my.salesforce.com`.
 
 Non utilizzare un URL `lightning.force.com` come URL dell&#39;istanza.
 
@@ -169,7 +169,7 @@ Un amministratore Microsoft Dynamics 365 o Azure registra un’applicazione e la
 
 ### Importa campi CRM
 
-Dopo aver connesso il CRM, configura il mapping in entrata per determinare quali campi del CRM vengono visualizzati nel Qualificatore Marketo. Per aprire **[!UICONTROL Inbound Mapping]**, seleziona **[!UICONTROL Gestisci]** nella scheda del sistema di gestione delle relazioni con i clienti connessa, quindi aggiungi una sezione per ogni tipo di entità di cui desideri importare i campi.
+Dopo aver connesso il CRM, configura il mapping in entrata per determinare quali campi del CRM vengono visualizzati in Marketo Qualifier. Per aprire **[!UICONTROL Inbound Mapping]**, seleziona **[!UICONTROL Gestisci]** nella scheda del sistema di gestione delle relazioni con i clienti connessa, quindi aggiungi una sezione per ogni tipo di entità di cui desideri importare i campi.
 
 Consulta [Mappatura dei campi CRM (mappatura in entrata)](integrations.md#map-crm-fields-inbound-mapping) per i passaggi completi, incluso come rendere disponibili i campi importati come filtri.
 

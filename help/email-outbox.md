@@ -4,14 +4,14 @@ description: Scopri come rivedere le e-mail inviate da Adobe Marketo Qualifier p
 feature: Agentic AI, Sales Insights, Account Journeys
 role: User
 product_v2:
-  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
-    internal-label: CX Enterprise
+  - id: d98caee2-fd67-486e-9513-36435358ebff
+    internal-label: Sales Qualifier
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 042ebc0019d33019940ff8ad98c0635cb97235f0
+source-git-commit: 3b50b4d3000696cb25ef747fefd579cfd3b3ba0f
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%
@@ -27,7 +27,7 @@ La pagina presenta due pannelli: un elenco di e-mail a sinistra e una visualizza
 
 L&#39;elenco **[!UICONTROL Tutte le e-mail]** contiene una riga per ogni e-mail inviata, con l&#39;e-mail più recente. Ogni riga mostra il nome del destinatario, l’oggetto e la data di invio. Un&#39;e-mail senza oggetto mostra _(Nessun oggetto)_. Scorri per caricare e-mail precedenti.
 
-Quando apri la pagina, Adobe Marketo Qualifier seleziona automaticamente la prima e-mail in modo che il relativo contenuto venga visualizzato sulla destra.
+Quando apri la pagina, Adobe Marketo Qualifier seleziona automaticamente la prima e-mail in modo che il relativo contenuto venga visualizzato a destra.
 
 Se non hai inviato alcuna e-mail, l&#39;elenco mostra _La tua casella in uscita è vuota_. Dopo aver inviato o pianificato un’e-mail tramite un flusso di lavoro in uscita, viene visualizzata qui.
 
@@ -39,7 +39,7 @@ Per aprire un messaggio e-mail a destra, selezionalo nell’elenco. La vista di 
 * **Flusso di lavoro in uscita e oggetto**: l&#39;oggetto, il nome del [Flusso di lavoro in uscita](outbound-workflows.md) che ha inviato l&#39;e-mail e lo stato del flusso di lavoro in uscita. Per aprire il flusso di lavoro in uscita, selezionarne il nome.
 * **Conversazione**: l&#39;e-mail inviata ed eventuali risposte in un thread. Ogni voce identifica se il messaggio è stato inviato o ricevuto e include una marca temporale.
 
-Le e-mail vengono riprodotte così come sono state inviate, incluso il contenuto personalizzato. Se il corpo di un messaggio non è disponibile, il qualificatore Marketo visualizza una breve nota _Contenuto e-mail non disponibile_.
+Le e-mail vengono riprodotte così come sono state inviate, incluso il contenuto personalizzato. Se il corpo di un messaggio non è disponibile, in Marketo Qualifier viene visualizzata una breve nota _Contenuto e-mail non disponibile_.
 
 >[!NOTE]
 >
