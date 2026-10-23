@@ -18,9 +18,9 @@ topic_v2:
     internal-label: Security
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 3b50b4d3000696cb25ef747fefd579cfd3b3ba0f
+source-git-commit: bf94a2d28913093923f446025405339e4e64919c
 workflow-type: tm+mt
-source-wordcount: '1456'
+source-wordcount: '1510'
 ht-degree: 0%
 ---
 
@@ -147,9 +147,11 @@ La mappatura in entrata controlla quali campi CRM importa in Marketo Qualifier e
 
 1. Immettere un **[!UICONTROL nome sezione]** e una **[!UICONTROL descrizione]** facoltativa. Quindi, seleziona **[!UICONTROL Avanti]**.
 1. Nel passaggio **[!UICONTROL Aggiungi campo]**, per importare campi CRM, cercarli e selezionarli. Quindi, per continuare, seleziona **[!UICONTROL Avanti]**. Ogni campo contiene **[!UICONTROL Nome visualizzato]**, **[!UICONTROL Nome campo]** e **[!UICONTROL Tipo dati]**.
-1. Per le sezioni **[!UICONTROL Potenziali]**, **[!UICONTROL Contatti]** e **[!UICONTROL Opportunità]**, attiva **[!UICONTROL Filterabile]** per ogni campo necessario ai rappresentanti nell&#39;elenco [Potenziali](prospects.md).
+1. Per le sezioni **[!UICONTROL Potenziali]**, **[!UICONTROL Contatti]**, **[!UICONTROL Account]** e **[!UICONTROL Opportunità]**, attiva **[!UICONTROL Filterabile]** per ogni campo necessario ai rappresentanti nell&#39;elenco [Potenziali](prospects.md#filter-and-find-prospects) o nel [Flusso di lavoro in uscita](outbound-workflows.md#step-2-configure-targeting-filters).
 
    Un campo non può essere reso filtrabile se il relativo tipo di dati non supporta il filtro o se è già utilizzato in un’altra sezione.
+
+   I campi dell’account filtrabili consentono ai rappresentanti di filtrare i contatti in base agli attributi dell’account associato, ad esempio settore, area geografica o tipo di account. Possono combinare i filtri account, contatto e opportunità per definire quali contatti sono idonei per un flusso di lavoro in uscita. Il filtro dei campi account è disponibile per Salesforce e Microsoft Dynamics 365.
 
    In **[!UICONTROL Contatti opportunità personali]**, i campi delle opportunità filtrabili vengono visualizzati come colonne separate con etichette quali **[!UICONTROL Fase (opportunità)]**. Il suffisso distingue gli attributi opportunità dai campi del contatto associato.
 
