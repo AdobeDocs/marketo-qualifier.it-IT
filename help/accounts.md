@@ -13,15 +13,17 @@ topic_v2:
     internal-label: Customer experience
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 3b50b4d3000696cb25ef747fefd579cfd3b3ba0f
+source-git-commit: 30abc8c57bb9b7a57f68c8e7daecc1bf3ac36567
 workflow-type: tm+mt
-source-wordcount: '647'
+source-wordcount: '703'
 ht-degree: 0%
 ---
 
 # Account
 
 La visualizzazione account combina ricerca generata dall’intelligenza artificiale, notizie recenti, opportunità aperte, valore della pipeline e contatti coinvolti. Utilizza queste informazioni per comprendere e assegnare la priorità a un account prima di contattarlo.
+
+Per trovare e assegnare priorità a più account contemporaneamente, utilizza [Pubblico avanzato (Beta)](smart-audience.md). Crea un elenco di account, perfezionalo con i dati CRM e i segnali di crescita e trova i lead da aggiungere a un flusso di lavoro in uscita.
 
 ## Apri un account
 
@@ -66,7 +68,9 @@ Utilizza i pulsanti sotto la panoramica per passare da una visualizzazione all�
 | **[!UICONTROL Membri principali]** | Contatti principali coinvolti dell’account, classificati per coinvolgimento. Ogni contatto mostra la propria qualifica, l’indirizzo e-mail, il punteggio di coinvolgimento e l’indicatore di urgenza. |
 | **[!UICONTROL Dati intento]** | Segnali di intento di acquisto per l’account, ad esempio i prodotti e gli argomenti di ricerca dell’account. |
 | **[!UICONTROL Membri team account]** | Persone assegnate all’account, con e-mail, qualifica, territorio e gruppo di prodotti. |
-| **[!UICONTROL Campi CRM]** | Campi account importati dal CRM, come configurato nella mappatura in entrata. Consulta [Integrazioni](integrations.md#map-crm-fields-inbound-mapping). |
+| **[!UICONTROL Campi CRM]** | Campi account importati dal CRM, come configurato nella mappatura in entrata. |
+
+I campi che un amministratore rende filtrabili possono essere utilizzati anche per filtrare i contatti in base all’account associato e definire i criteri di targeting per i flussi di lavoro in uscita. Consulta [Integrazioni](integrations.md#map-crm-fields-inbound-mapping).
 
 Dalla visualizzazione **[!UICONTROL Membri principali]**, eseguire una delle azioni seguenti per un contatto:
 

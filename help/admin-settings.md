@@ -20,9 +20,9 @@ topic_v2:
     internal-label: Administration
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: 3b50b4d3000696cb25ef747fefd579cfd3b3ba0f
+source-git-commit: bf94a2d28913093923f446025405339e4e64919c
 workflow-type: tm+mt
-source-wordcount: '1292'
+source-wordcount: '1356'
 ht-degree: 0%
 ---
 
@@ -78,14 +78,16 @@ Dopo aver connesso il CRM, selezionare **[!UICONTROL Gestisci]** per la connessi
 
    Ogni riga di campo visualizza il relativo **[!UICONTROL Nome visualizzato]**, **[!UICONTROL Nome campo]** e **[!UICONTROL Tipo di dati]**.
 
-1. Attiva **[!UICONTROL Filterable]** per ogni campo prospect, contatto o opportunità che desideri rendere disponibile come filtro nell&#39;elenco **[!UICONTROL Prospect]**.
+1. Attiva **[!UICONTROL Filterable]** per ogni campo di prospect, contatto, account o opportunità che desideri rendere disponibile come filtro nell&#39;elenco **[!UICONTROL Prospect]** e nel [targeting di flussi di lavoro in uscita](outbound-workflows.md#step-2-configure-targeting-filters).
 1. Visualizzare l&#39;anteprima della sezione e selezionare **[!UICONTROL Aggiungi]**.
 
 I campi mappati vengono visualizzati nelle aree corrispondenti di Marketo Qualifier:
 
 * I campi prospect vengono visualizzati nella scheda **[!UICONTROL Persona]**.
-* I campi Account vengono visualizzati nella scheda **[!UICONTROL Account]**.
+* I campi Account vengono visualizzati nella scheda **[!UICONTROL Account]**. In una sezione con il tipo di entità **[!UICONTROL Account]**, rendi i campi filtrabili in modo che i rappresentanti possano filtrare i contatti in base agli attributi del proprio account associato, ad esempio settore, area geografica o tipo di account.
 * I campi dell&#39;opportunità vengono visualizzati nella sezione **[!UICONTROL Opportunità account]**. I campi delle opportunità filtrabili vengono inoltre visualizzati come colonne proprie in **[!UICONTROL Contatti opportunità personali]**, con etichette quali **[!UICONTROL Fase (opportunità)]** per distinguerli dai campi dei contatti.
+
+Il filtro dei campi account è disponibile per Salesforce e Microsoft Dynamics 365. I rappresentanti possono combinare i campi filtrabili account, contatto e opportunità per trovare contatti e definire criteri di targeting per i flussi di lavoro in uscita.
 
 ## Configurare la sincronizzazione delle attività (mappatura in uscita)
 

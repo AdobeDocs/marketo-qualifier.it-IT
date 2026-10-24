@@ -19,9 +19,9 @@ topic_v2:
     internal-label: Personalization
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 3b50b4d3000696cb25ef747fefd579cfd3b3ba0f
+source-git-commit: bf94a2d28913093923f446025405339e4e64919c
 workflow-type: tm+mt
-source-wordcount: '2692'
+source-wordcount: '2776'
 ht-degree: 0%
 ---
 
@@ -93,6 +93,8 @@ Descrivi il tuo potenziale cliente ideale nel linguaggio naturale. Immettere ad 
 
 Il targeting può utilizzare il tipo di attività, il punteggio, la valutazione e altri attributi disponibili. Combinare i criteri con [!DNL AND] o [!DNL OR] e utilizzare operatori quali è uguale a, contiene, maggiore di, minore di e tra.
 
+Per Salesforce e Microsoft Dynamics 365, il targeting può anche combinare i campi account, contatto e opportunità che un amministratore rende filtrabili in [mappatura in entrata](integrations.md#map-crm-fields-inbound-mapping). Ad esempio, combina il ruolo di un contatto con il settore del suo account associato e la fase di un’opportunità per indirizzare i contatti giusti.
+
 ### Iscrizione automatica dei potenziali clienti da Marketing Highlights
 
 Un flusso di lavoro in uscita può valutare l’attività dei punti salienti del marketing in tempo reale in base ai relativi criteri di targeting. Quando l&#39;attività corrisponde, [!DNL Marketo Qualifier] risolve il proprietario del CRM del prospect tramite e-mail e registra il prospect solo in un flusso di lavoro idoneo che appartiene a tale rappresentante.
@@ -161,6 +163,8 @@ Un amministratore configura il piè di pagina di rinuncia a livello globale, che
 ### Aggiungi potenziali clienti e avvia la generazione di e-mail {#step-5-add-prospects-and-start-email-generation}
 
 Dopo il salvataggio, aggiungi i potenziali clienti dalla vista di selezione. Vengono applicati i filtri di targeting configurati.
+
+Puoi anche aggiungere lead a un flusso di lavoro in uscita esistente da un [elenco Smart audience (Beta)](smart-audience.md#add-leads-to-an-outbound-workflow). Rivedi i lead selezionati e il flusso di lavoro prima di confermare. L’aggiunta di lead non sostituisce i passaggi di revisione e approvazione delle e-mail descritti di seguito.
 
 1. Rivedi l&#39;elenco.
 

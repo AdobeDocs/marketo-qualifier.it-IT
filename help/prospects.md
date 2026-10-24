@@ -15,9 +15,9 @@ topic_v2:
     internal-label: Customer experience
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 3b50b4d3000696cb25ef747fefd579cfd3b3ba0f
+source-git-commit: bf94a2d28913093923f446025405339e4e64919c
 workflow-type: tm+mt
-source-wordcount: '852'
+source-wordcount: '953'
 ht-degree: 1%
 ---
 
@@ -28,7 +28,7 @@ Per visualizzare i lead e i contatti a cui puoi accedere, seleziona **[!UICONTRO
 ![Tabella dei potenziali clienti con lo stato del lead e l&#39;ultima attività per la gestione dei potenziali clienti](./assets/prospects.png){width="800" zoomable="yes"}
 
 * **[!UICONTROL Lead]** Lead assegnati a te nel CRM connesso.
-* **[!UICONTROL Contatti]** Contatti assegnati all&#39;utente nel CRM connesso.
+* **[!UICONTROL Contatti]** Contatti assegnati all&#39;utente nel CRM connesso, con il relativo account associato. I dettagli di contatto includono anche il nome del proprietario. Questi dettagli sono disponibili per Salesforce e Microsoft Dynamics 365.
 * **[!UICONTROL Dati di rilievo sul marketing]** potenziali clienti con attività Marketo live, ad esempio aperture di e-mail o clic.
 * **[!UICONTROL Elenco persone]** Potenziali importati o aggiunti manualmente.
 
@@ -80,6 +80,8 @@ Gli amministratori possono anche rendere disponibili come filtri i campi CRM map
 
 In **[!UICONTROL Contatti opportunità personali]** è inoltre possibile filtrare i contatti in base ai campi dalle opportunità associate, ad esempio area di visualizzazione, tipo e data di chiusura. I campi dell&#39;opportunità hanno etichette come **[!UICONTROL Stage (Opportunità)]**, che li distingue dai campi del contatto. L’amministratore controlla quali campi dell’opportunità sono disponibili come filtri.
 
+Puoi anche filtrare i contatti per campi dal loro account associato, ad esempio settore, area geografica o tipo di account. L’amministratore sceglie i campi dell’account filtrabili. Combina i filtri account, contatto e opportunità per trovare, ad esempio, i contatti in un ruolo specifico presso gli account in un settore specifico. Il filtro dei campi account è disponibile per Salesforce e Microsoft Dynamics 365 e gli stessi campi possono essere utilizzati in [Destinazione flusso di lavoro in uscita](outbound-workflows.md#step-2-configure-targeting-filters).
+
 ### Filtra per elementi di rilievo sul marketing
 
 Rivedi e assegna la priorità ai potenziali clienti in base al loro coinvolgimento live [!DNL Marketo], ad esempio attività e-mail, visite web e riempimenti di moduli. Il coinvolgimento appare quasi in tempo reale, come accade.
@@ -98,8 +100,8 @@ Marketing Highlights è disponibile in tutte le aree geografiche di produzione. 
 Per aprire il profilo di un prospect, selezionarlo. Rivedi i segnali importanti prima di contattare:
 
 * **Riepilogo persona IA**: istantanea scritta da IA del lead o del contatto e del loro impegno recente. Utilizza il riepilogo per comprendere la persona rapidamente prima di rivedere le singole attività. I riepiloghi delle persone di IA sono disponibili nelle istanze che eseguono [!DNL Marketo Optimizer] Prime o Ultimate.
-* **Elenco attività**: elenco cronologico delle attività e dei comportamenti recenti.
-* **Visualizzazione sequenza temporale**: sequenza temporale visiva del coinvolgimento tra i canali.
+* **Elenco attività**: elenco cronologico che mostra gli ultimi 90 giorni di attività di marketing.
+* **Visualizzazione sequenza temporale**: sequenza temporale visiva che mostra gli ultimi 90 giorni di coinvolgimento marketing tra i canali.
 * **Contenuto visualizzato**: pagine Web e risorse visualizzate dal prospect. Per aprire un elemento, selezionarlo.
 
 ### Genera preparazione riunione
