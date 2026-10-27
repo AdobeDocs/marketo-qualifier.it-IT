@@ -6,18 +6,22 @@ role: User
 TQID: 'https://experienceleague.adobe.com/4IsAlgFBxddHCz0-CLCDXPCHI7m3motiXhgCR6MZq0k'
 product_v2:
   - id: d98caee2-fd67-486e-9513-36435358ebff
-    internal-label: Sales Qualifier
+    internal-label: Marketo Qualifier
 feature_v2:
-  - id: fc7979f3-56c3-43ca-9784-f1ea3dc69c4b
-    internal-label: Integrations
+  - id: ace0d1fc-8e69-4e6a-a442-37fc40985eea
+    internal-label: Account Qualification Agent
+  - id: abf46024-b86e-4240-96ee-3f23636dfc27
+    internal-label: Outbound Workflows
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-    internal-label: Reporting
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-    internal-label: Customer experience
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-    internal-label: Insights
-source-git-commit: bf94a2d28913093923f446025405339e4e64919c
+  - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
+    internal-label: Artificial intelligence
+source-git-commit: ab54d20ccc80d88c3592d89c9f43feeb062ed82c
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 17%
@@ -40,7 +44,7 @@ L&#39;app fa parte della famiglia di prodotti [!DNL Marketo], insieme a [!DNL Ma
 * **Fai domande in linguaggio naturale** con la chat basata su IA, che utilizza i tuoi dati di gestione delle relazioni con i clienti, il coinvolgimento e il Knowledge Center.
 * **Tieni traccia delle prestazioni di outreach** con rapporti e-mail e prenotazione riunioni.
 
->[!VIDEO](https://video.tv.adobe.com/v/3476569?captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3505339)
 
 ## Utilizzare la home page
 
@@ -52,7 +56,7 @@ La pagina Home mostra anche le attività e i flussi di lavoro in uscita futuri. 
 
 ::::landing-cards-container
 :::card
-![icona](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=it)
+![icona](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Introduzione
 
@@ -62,7 +66,7 @@ Completa l’impostazione dell’amministratore una tantum per i gruppi di utent
 :::
 
 :::card
-![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=it)
+![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Potenziali clienti
 
@@ -72,7 +76,7 @@ Crea, filtra e controlla l’elenco di potenziali clienti.
 :::
 
 :::card
-![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=it)
+![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Account
 
@@ -82,7 +86,7 @@ Dai priorità all’estensione con pipeline a livello di account e dati di coinv
 :::
 
 :::card
-![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=it)
+![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Pubblico avanzato (Beta)
 
@@ -92,7 +96,7 @@ Crea e assegna priorità agli elenchi di account e lead, quindi aggiungi i lead 
 :::
 
 :::card
-![icona](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=it)
+![icona](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Flussi di lavoro in uscita
 
@@ -102,7 +106,7 @@ Crea cadenze guidate da obiettivi con e-mail generate dall’intelligenza artifi
 :::
 
 :::card
-![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=it)
+![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Attività
 
@@ -112,7 +116,7 @@ Elabora le chiamate telefoniche, LinkedInMail e le attività di revisione e-mail
 :::
 
 :::card
-![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=it)
+![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Prestazioni
 
@@ -122,7 +126,7 @@ Verifica le prestazioni di e-mail e prenotazione riunioni.
 :::
 
 :::card
-![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=it)
+![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Centro conoscenze
 
@@ -132,7 +136,7 @@ Crea un playbook che attinga l’attività di intelligenza artificiale e l’ass
 :::
 
 :::card
-![icona](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=it)
+![icona](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Integrazioni
 
@@ -142,7 +146,7 @@ Connetti Salesforce o Microsoft Dynamics 365 e mappa i campi.
 :::
 
 :::card
-![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=it)
+![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Impostazioni profilo
 
@@ -152,7 +156,7 @@ Configura la disponibilità di e-mail, firma e calendario.
 :::
 
 :::card
-![icona](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=it)
+![icona](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Chat basata su IA
 
