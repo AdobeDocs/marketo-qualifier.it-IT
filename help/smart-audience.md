@@ -4,9 +4,9 @@ description: Scopri come utilizzare Smart audience (Beta) per creare elenchi di 
 feature: Agentic AI, Sales Insights, Account Journeys
 role: User
 badgeBeta: label="Beta" type="Informative"
-source-git-commit: bf94a2d28913093923f446025405339e4e64919c
+source-git-commit: 633ca975d4fe58bdcc84caf633049ae1190b0f56
 workflow-type: tm+mt
-source-wordcount: '1125'
+source-wordcount: '1313'
 ht-degree: 0%
 ---
 
@@ -17,6 +17,8 @@ Smart audience (Beta) consente di trovare gli account e le persone che lavoreran
 Utilizza la vista a elenco con la relativa griglia, i filtri e i pulsanti, oppure usa la chat per descrivere cosa desideri. Entrambi lavorano sullo stesso elenco: le modifiche in uno vengono visualizzate nell’altro. Se una modifica non viene visualizzata immediatamente, selezionare **[!UICONTROL Aggiorna]**.
 
 Il tracciatore dell&#39;avanzamento nella parte superiore di ogni elenco mostra tre fasi: **[!UICONTROL Crea elenco smart audience]**, **[!UICONTROL Assegna priorità ai lead]** e **[!UICONTROL Aggiungi al flusso di lavoro in uscita]**.
+
+La pagina di destinazione include un esempio di riproduzione automatica del flusso completo in cinque passaggi, dalla descrizione degli account all’aggiunta di lead a un flusso di lavoro in uscita. Una procedura dettagliata per **[!UICONTROL Funzionamento]** spiega il percorso passo dopo passo e si apre automaticamente quando non si dispone di elenchi. È possibile ignorare la procedura dettagliata e riaprirla in qualsiasi momento selezionando **[!UICONTROL Funzionamento]**.
 
 ## Prima di iniziare
 
@@ -29,7 +31,10 @@ Puoi creare fino a 100 elenchi. Ogni elenco contiene fino a 500 account e 2.000 
 Inizia con una descrizione degli account che desideri raggiungere. L’anteprima non salva un elenco.
 
 1. Apri **[!UICONTROL Pubblico avanzato]** e seleziona **[!UICONTROL Nuovo pubblico avanzato]** o **[!UICONTROL Crea elenco]**.
-1. In chat, descrivi gli account desiderati. Immettere ad esempio `Find healthcare accounts with revenue over $50M`.
+1. Utilizza le opzioni di aggiunta rapida e i prompt di esempio nella pagina di creazione del pubblico per avviare la richiesta o descrivi gli account che desideri in chat.
+
+   Immettere ad esempio `Find healthcare accounts with revenue over $50M`.
+
 1. Esamina il numero di account corrispondenti e il campione nell’anteprima.
 
 La richiesta può includere i seguenti criteri:
@@ -58,6 +63,8 @@ Salva l’anteprima quando corrisponde al pubblico previsto.
 1. Quando l’anteprima è pronta, chiedi a chat di salvarla come elenco e assegna un nome all’elenco.
 1. Esaminare gli account salvati nella scheda **[!UICONTROL Account]**.
 
+Gli elenchi salvati vengono visualizzati come schede con i dettagli dell’account, del lead e dell’arricchimento, per aiutarti a scegliere quale elenco aprire.
+
 È possibile rinominare un elenco dalla relativa pagina. Per eliminare un elenco, aprirlo e selezionare **[!UICONTROL Elimina elenco smart audience]**.
 
 >[!CAUTION]
@@ -82,7 +89,9 @@ Per aggiungere segnali di crescita, selezionare **[!UICONTROL Arricchisci accoun
 
 Immettere ad esempio `Which of these accounts have raised funding recently?` o `Which of these accounts have had layoffs?`.
 
-Negli elenchi di grandi dimensioni, l’aggiunta di un segnale può richiedere alcuni minuti. Segui l’avanzamento mostrato nell’elenco, controlla ogni nuova colonna e mantienila o eliminala.
+Negli elenchi di grandi dimensioni, l’aggiunta di un segnale può richiedere alcuni minuti. Segui l’avanzamento mostrato nell’elenco, controlla ogni nuova colonna e mantienila o eliminala. Dopo aver aggiunto una colonna di arricchimento, selezionare **[!UICONTROL Mostra colonna]** per visualizzarla. La colonna viene evidenziata brevemente in modo da poterla trovare senza modificare l’ordine delle colonne.
+
+Le schede **[!UICONTROL Account]** e **[!UICONTROL Lead]** mostrano il numero di record. La colonna **[!UICONTROL Account]** rimane visualizzata mentre scorri orizzontalmente nell&#39;elenco.
 
 Per limitare e assegnare la priorità agli account:
 
@@ -109,9 +118,13 @@ Per una richiesta di chat, immettere `Find VP and Director level people at these
 
 Esamina i risultati nella scheda **[!UICONTROL Lead]**. Ogni lead mostra il proprio nome, titolo, account, e-mail, proprietario e punteggio. Filtra per anzianità, se è disponibile un indirizzo e-mail, punteggio minimo o massimo o se il lead si trova in un flusso di lavoro. La colonna **[!UICONTROL Motivazione]** spiega perché ogni lead è classificato nella posizione in cui si trova.
 
+Se la scheda **[!UICONTROL Lead]** è vuota, segui le istruzioni per trovare i lead per gli account selezionati.
+
 ### Funzionamento dei punteggi
 
 I punteggi variano da 0 a 100. Un punteggio più alto indica una migliore adesione e una maggiore prontezza al coinvolgimento. Gli stessi dati producono lo stesso punteggio.
+
+I punteggi sono codificati per aiutare le partite più forti a distinguersi. Rivedi il punteggio numerico e il ragionamento quando confronti account o lead, anziché affidarti esclusivamente al colore.
 
 Un punteggio combina:
 

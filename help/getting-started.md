@@ -26,9 +26,9 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: fcdc5d36cbb1500cf984e1439291aa8dbf17b72b
+source-git-commit: 633ca975d4fe58bdcc84caf633049ae1190b0f56
 workflow-type: tm+mt
-source-wordcount: '1020'
+source-wordcount: '1063'
 ht-degree: 0%
 ---
 
@@ -179,6 +179,8 @@ Dopo aver connesso il CRM, configura il mapping in entrata per determinare quali
 Consulta [Mappatura dei campi CRM (mappatura in entrata)](integrations.md#map-crm-fields-inbound-mapping) per i passaggi completi, incluso come rendere disponibili i campi importati come filtri.
 
 ## Passaggi successivi
+
+Gli amministratori possono [installare il plug-in CRM](crm-plugin-setup.md) in modo che i rappresentanti possano utilizzare Marketo Qualifier Insights in Salesforce o Microsoft Dynamics 365. In Salesforce, gli amministratori possono anche aggiungere azioni per i flussi di lavoro in uscita e le campagne Marketo alle visualizzazioni e alle pagine di record degli elenchi di lead e contatti.
 
 >[!MORELIKETHIS]
 >

@@ -26,9 +26,9 @@ level_v2:
 topic_v2:
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: ab54d20ccc80d88c3592d89c9f43feeb062ed82c
+source-git-commit: 633ca975d4fe58bdcc84caf633049ae1190b0f56
 workflow-type: tm+mt
-source-wordcount: '953'
+source-wordcount: '1033'
 ht-degree: 1%
 ---
 
@@ -86,6 +86,8 @@ Per limitare l&#39;elenco, selezionare **[!UICONTROL Filtro]**. Puoi filtrare pe
 * Account
 * Origine
 * Ultimo aggiornamento
+
+Negli elenchi **[!UICONTROL Lead]** e **[!UICONTROL Contatti]**, i filtri di testo come **[!UICONTROL Titolo processo]** e **[!UICONTROL E-mail]** accettano fino a cinque valori con l&#39;operatore contains. Digita un valore e premi Invio, quindi aggiungi il valore successivo. I risultati includono potenziali clienti che corrispondono a uno qualsiasi dei valori. Ad esempio, un filtro titolo processo contenente `manager` e `director` restituisce potenziali il cui titolo contiene una delle due parole. Questo filtro è disponibile per Salesforce e Microsoft Dynamics 365 e gli stessi filtri possono essere utilizzati in [Destinazione flusso di lavoro in uscita](outbound-workflows.md#step-2-configure-targeting-filters).
 
 Gli amministratori possono anche rendere disponibili come filtri i campi CRM mappati. In **[!UICONTROL Impostazioni amministratore]**, attiva **[!UICONTROL Filtrabile]** per ogni campo utilizzato dagli utenti per trovare potenziali clienti. Vedi [Mappa campi CRM](integrations.md#map-crm-fields-inbound-mapping).
 
