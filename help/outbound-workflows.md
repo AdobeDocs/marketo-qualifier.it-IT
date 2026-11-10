@@ -21,9 +21,9 @@ topic_v2:
     internal-label: Artificial intelligence
   - id: beb7a3c1-66ab-4786-b879-7621375b3c40
     internal-label: Email marketing
-source-git-commit: ab54d20ccc80d88c3592d89c9f43feeb062ed82c
+source-git-commit: 633ca975d4fe58bdcc84caf633049ae1190b0f56
 workflow-type: tm+mt
-source-wordcount: '2776'
+source-wordcount: '3086'
 ht-degree: 0%
 ---
 
@@ -82,20 +82,21 @@ L’intelligenza artificiale mantiene i requisiti nell’obiettivo esattamente n
 
 I filtri di targeting definiscono quali potenziali clienti sono idonei. Quando si aggiungono i potenziali clienti in un secondo momento, nell&#39;elenco di selezione vengono visualizzati solo i potenziali clienti che corrispondono a questi filtri.
 
-![Filtri di destinazione](assets/create-workflow-targeting.png){width="800" zoomable="yes"}
+Descrivi i lead o contatti del CRM che desideri raggiungere in linguaggio semplice. Immettere ad esempio `Contacts with open opportunities closing in the next 30 days` o utilizzare un esempio di richiesta predefinito per iniziare. [!DNL Adobe Marketo Qualifier] converte la descrizione in filtri che è possibile rivedere e modificare prima di salvare. Se parte della descrizione non può essere convertita in un filtro, viene contrassegnata in modo da poter rivedere la condizione anziché ignorarla inconsapevolmente.
 
-Descrivi il tuo potenziale cliente ideale nel linguaggio naturale. Immettere ad esempio `Hot leads at companies with 500 or more employees who requested a demo`. [!DNL Adobe Marketo Qualifier] converte la descrizione in criteri di targeting che è possibile rivedere e perfezionare.
+Il generatore di filtri utilizza la stessa esperienza dei [filtri degli elementi di rilievo marketing](prospects.md#filter-by-marketing-highlights) nella pagina Prospect. Utilizzala per aggiungere, modificare o cancellare condizioni.
 
-1. Per aprire l&#39;elenco **[!UICONTROL Aggiungi un filtro]**, selezionare la freccia rivolta verso il basso, quindi selezionare un filtro.
-
-1. Imposta i valori per il filtro.
-1. Aggiungi altri filtri per restringere il pubblico.
-
-1. Continua con i punti di contatto.
+1. Esamina i filtri generati dalla descrizione oppure seleziona un filtro per aggiungere manualmente una condizione.
+1. Scegli l’operatore e inserisci o seleziona i valori per ciascuna condizione.
+1. Aggiungi, modifica o cancella condizioni per perfezionare il pubblico.
+1. Seleziona **[!UICONTROL Anteprima lead]** o **[!UICONTROL Anteprima contatti]** per vedere quali potenziali corrispondono.
+1. Rivedi l’anteprima e, se necessario, regola i filtri prima di continuare con i punti di contatto.
 
 Il targeting può utilizzare il tipo di attività, il punteggio, la valutazione e altri attributi disponibili. Combinare i criteri con [!DNL AND] o [!DNL OR] e utilizzare operatori quali è uguale a, contiene, maggiore di, minore di e tra.
 
-Per Salesforce e Microsoft Dynamics 365, il targeting può anche combinare i campi account, contatto e opportunità che un amministratore rende filtrabili in [mappatura in entrata](integrations.md#map-crm-fields-inbound-mapping). Ad esempio, combina il ruolo di un contatto con il settore del suo account associato e la fase di un’opportunità per indirizzare i contatti giusti.
+Ogni filtro degli elenchi **[!UICONTROL Lead]** e **[!UICONTROL Contatti]** può essere utilizzato nel targeting, inclusi i campi dell&#39;account, i campi dell&#39;opportunità, lo stato del flusso di lavoro in uscita e le categorie di contatto, ad esempio **[!UICONTROL Contatti opportunità personali]**. Gli amministratori scelgono i campi CRM filtrabili in [inbound mapping](integrations.md#map-crm-fields-inbound-mapping).
+
+Tutti i filtri di targeting vengono salvati con il flusso di lavoro e applicati automaticamente quando aggiungi dei potenziali clienti. [I suggerimenti dell&#39;agente](tasks.md#agent-suggestions) utilizzano lo stesso set completo di filtri, pertanto i potenziali clienti consigliati corrispondono ai criteri di targeting.
 
 ### Iscrizione automatica dei potenziali clienti da Marketing Highlights
 
@@ -148,7 +149,7 @@ La sezione **[!UICONTROL Impostazioni]** controlla il funzionamento del flusso d
 
 ![Pannello impostazioni](assets/create-workflow-settings.png){width="800" zoomable="yes"}
 
-1. Rivedi il nome del flusso di lavoro in uscita **&#x200B;**&#x200B;e modificalo se necessario.
+1. Rivedi il nome del flusso di lavoro in uscita **** e modificalo se necessario.
 1. In **[!UICONTROL Numero massimo di potenziali clienti per flusso di lavoro in uscita]**, confermare il numero massimo di potenziali clienti che il flusso di lavoro in uscita può gestire contemporaneamente.
 1. Imposta la **[!UICONTROL finestra di invio]** per le ore in cui le e-mail in uscita possono essere inviate.
 1. Seleziona i giorni della settimana in cui le e-mail possono essere inviate. Per evitare gli invii di fine settimana, seleziona solo i giorni della settimana invece di utilizzare un&#39;impostazione **[!UICONTROL Ignora fine settimana]** separata.
@@ -258,6 +259,25 @@ Utilizza questi filtri per mantenere attivi i flussi di lavoro in uscita condivi
 
 * In **[!UICONTROL Potenziali coinvolti]** e **[!UICONTROL Prestazioni]**, utilizza **[!UICONTROL Iscritto da]** per filtrare i potenziali clienti in base alla persona che li ha iscritti. Il filtro utilizza come valori predefiniti i potenziali clienti che hai iscritto.
 * Nella scheda **[!UICONTROL Sfoglia]**, utilizza il filtro di condivisione per selezionare **[!UICONTROL Condiviso da me]**, **[!UICONTROL Condiviso con me]**, **[!UICONTROL Privato]** o **[!UICONTROL Tutto]**.
+
+## Rivedere e inviare le risposte alle bozze AI
+
+Quando un potenziale cliente risponde a un&#39;e-mail del flusso di lavoro in uscita, puoi rivedere, modificare e inviare una bozza di risposta di IA direttamente dalla vista **[!UICONTROL Prospect coinvolti]** del flusso di lavoro senza passare ad Attività. Per informazioni su come la bozza utilizza il contesto di conversazione e quali messaggi richiedono una risposta personale, vedere [Risposta a un potenziale cliente con un suggerimento di un agente](tasks.md#reply-to-a-prospect-with-an-agent-suggestion).
+
+1. Apri il flusso di lavoro in uscita e seleziona **[!UICONTROL Prospect coinvolti]**.
+1. Selezionare il tag **[!UICONTROL Risposta bozza IA da rivedere]** accanto a un prospect.
+
+   L’icona delle informazioni del tag spiega che il potenziale cliente ha risposto ed è pronta una bozza. Puoi anche trovare la bozza sotto l&#39;e-mail che risponde nei punti di contatto del potenziale cliente, etichettati **[!UICONTROL Rispondi a questa e-mail]**.
+
+1. Leggi il messaggio del potenziale cliente, visualizzato sopra la risposta suggerita.
+1. Modificate la bozza in base alle esigenze.
+1. Seleziona **[!UICONTROL Approva e invia]** per inviare la risposta oppure **[!UICONTROL Rifiuta risposta]** per ignorarla.
+
+   Dopo una delle azioni viene visualizzata una conferma.
+
+Per aprire la conversazione e-mail completa, selezionare **[!UICONTROL Visualizza thread]**.
+
+Ogni bozza mostra il proprio stato: **[!UICONTROL In attesa di revisione]**, **[!UICONTROL Inviato]**, **[!UICONTROL Rifiutato]** o **[!UICONTROL Annullato]**. Solo il proprietario del prospect può approvare o rifiutare una bozza. Se non è possibile agire su una bozza, i pulsanti non sono disponibili e un messaggio spiega perché.
 
 ## Gestione delle risposte fuori sede
 

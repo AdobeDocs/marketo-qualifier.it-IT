@@ -26,9 +26,9 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ab54d20ccc80d88c3592d89c9f43feeb062ed82c
+source-git-commit: 633ca975d4fe58bdcc84caf633049ae1190b0f56
 workflow-type: tm+mt
-source-wordcount: '1356'
+source-wordcount: '1369'
 ht-degree: 0%
 ---
 
@@ -49,7 +49,7 @@ Per configurare le connessioni CRM, il mapping dei campi e la sincronizzazione d
 Marketo Qualifier funziona con il tuo sistema di gestione delle relazioni con i clienti nei seguenti modi:
 
 * **Query MCP CRM**: Account Qualification Agent esegue query sui dati CRM in tempo reale in modo che le risposte e le informazioni riflettano lo stato corrente dei record.
-* **Plug-in incorporato**. Il plug-in CRM visualizza informazioni e dati di agente [!DNL Marketo Sales Insights] (MSI) nel CRM. Utilizzare il plug-in per aggiungere un prospect a [!DNL Marketo Qualifier].
+* **Plug-in incorporato**. Il plug-in CRM visualizza informazioni e dati di agente [!DNL Marketo Sales Insights] (MSI) nel CRM. Utilizzare il plug-in per aggiungere un prospect a [!DNL Marketo Qualifier]. Per l&#39;installazione e la configurazione delle azioni di Salesforce, vedere [Incorporare Marketo Qualifier nel CRM](crm-plugin-setup.md).
 * **Sincronizzazione attività** - Quando un amministratore attiva **[!UICONTROL Sincronizzazione attività]**, le attività di outreach vengono sincronizzate con CRM e Marketo.
 
 ### Assegnare la priorità ai lead nel plug-in CRM

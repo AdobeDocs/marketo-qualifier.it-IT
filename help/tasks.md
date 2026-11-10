@@ -19,9 +19,9 @@ level_v2:
 topic_v2:
   - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
     internal-label: Customer engagement
-source-git-commit: fcdc5d36cbb1500cf984e1439291aa8dbf17b72b
+source-git-commit: 633ca975d4fe58bdcc84caf633049ae1190b0f56
 workflow-type: tm+mt
-source-wordcount: '1086'
+source-wordcount: '1105'
 ht-degree: 0%
 ---
 
@@ -109,7 +109,7 @@ Le attività completate, saltate e annullate sono definitive. Le azioni non sono
 
 ## Suggerimenti agente
 
-Nella scheda **[!UICONTROL Suggerimenti agente]** sono elencati i potenziali clienti che soddisfano i criteri di targeting di un flusso di lavoro in uscita e sono consigliati per la registrazione. Per attivare i consigli, vedi [Flussi di lavoro in uscita](outbound-workflows.md).
+La scheda **[!UICONTROL Suggerimenti agente]** elenca i potenziali clienti consigliati per l&#39;iscrizione utilizzando l&#39;intero set di [filtri di destinazione per flussi di lavoro in uscita](outbound-workflows.md#step-2-configure-targeting-filters) configurati. Per attivare i consigli, vedi [Flussi di lavoro in uscita](outbound-workflows.md).
 
 Per esaminare un suggerimento nel pannello di lavoro, selezionatelo:
 
@@ -139,6 +139,8 @@ I messaggi relativi ai prezzi, ai requisiti legali o di sicurezza, alle risposte
 1. Apri il suggerimento di risposta e controlla il thread completo e la risposta redatta.
 1. Per creare un&#39;altra bozza, modificare la risposta o selezionare **[!UICONTROL Genera con IA]**.
 1. Per inviare la risposta e continuare il flusso di lavoro in uscita del prospect, selezionare **[!UICONTROL Approva e invia]**.
+
+È inoltre possibile [rivedere, modificare, inviare o rifiutare le risposte alle bozze di IA](outbound-workflows.md#review-and-send-ai-draft-replies) dalla visualizzazione **[!UICONTROL Prospect coinvolti]** del flusso di lavoro in uscita.
 
 ## Completare attività da un flusso di lavoro in uscita
 

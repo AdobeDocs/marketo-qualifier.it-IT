@@ -25,9 +25,9 @@ level_v2:
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
     internal-label: Data integration
-source-git-commit: ab54d20ccc80d88c3592d89c9f43feeb062ed82c
+source-git-commit: 633ca975d4fe58bdcc84caf633049ae1190b0f56
 workflow-type: tm+mt
-source-wordcount: '1510'
+source-wordcount: '1531'
 ht-degree: 0%
 ---
 
@@ -36,6 +36,8 @@ ht-degree: 0%
 Connetti Outlook per inviare e-mail, riconoscere le risposte dei potenziali clienti e pianificare le riunioni. Per rendere disponibili i lead, i contatti, gli account, le opportunità, le attività e i proprietari per Account Qualification Agent (AQA) e i flussi di lavoro in uscita, è inoltre possibile collegare Adobe Marketo Qualifier a Salesforce o Microsoft Dynamics 365. Marketo Qualifier legge i dati CRM, può riscrivere le attività di outreach e lo stato di rinuncia al CRM e può sincronizzare le attività di outreach con Marketo. In caso contrario, non modifica i record CRM.
 
 Questo articolo spiega come connettere Outlook, gestire una connessione CRM, mappare i campi, sincronizzare le attività e configurare la rinuncia alle e-mail. Per connettere un CRM per la prima volta, vedere [Introduzione](getting-started.md#connect-your-crm).
+
+Per rendere le informazioni e le azioni di Marketo Qualifier disponibili in Salesforce o Microsoft Dynamics 365, consulta [Incorporare Marketo Qualifier nel CRM](crm-plugin-setup.md).
 
 >[!IMPORTANT]
 >

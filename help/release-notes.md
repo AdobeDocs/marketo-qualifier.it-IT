@@ -9,15 +9,20 @@ product_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: ab54d20ccc80d88c3592d89c9f43feeb062ed82c
+source-git-commit: 633ca975d4fe58bdcc84caf633049ae1190b0f56
 workflow-type: tm+mt
-source-wordcount: '619'
-ht-degree: 11%
+source-wordcount: '767'
+ht-degree: 10%
 ---
 # Note sulla versione di [!DNL Adobe Marketo Qualifier]
 
 ## Prossima versione
 
+* Descrivi chi desideri raggiungere in linguaggio semplice e trasformalo in filtri per lead e contatti del CRM, utilizza ogni filtro Lead e Contatti nel targeting del flusso di lavoro in uscita e visualizza in anteprima i potenziali clienti corrispondenti prima di salvare. [Ulteriori informazioni](outbound-workflows.md#step-2-configure-targeting-filters).
+* Filtra i potenziali clienti per diversi valori alla volta in campi di testo, ad esempio Titolo processo e E-mail, con un massimo di cinque valori per filtro. [Ulteriori informazioni](prospects.md#filter-and-find-prospects).
+* Rivedi, modifica e invia le risposte alle bozze AI alle risposte dei potenziali clienti direttamente da un flusso di lavoro in uscita, oppure rifiuta le bozze che non rientrano nella categoria. [Ulteriori informazioni](outbound-workflows.md#review-and-send-ai-draft-replies).
+* Installa [!DNL Adobe Marketo Qualifier] in Salesforce o Microsoft Dynamics 365 e aggiungi potenziali clienti ai flussi di lavoro in uscita o alle campagne Marketo dalle visualizzazioni elenco e pagine record di Salesforce. [Ulteriori informazioni](crm-plugin-setup.md).
+* Introduzione più rapida a Smart audience (Beta): una procedura guidata, opzioni di aggiunta rapida durante la creazione di un pubblico ed elenchi più chiari con conteggi di record, una colonna Account che rimane visualizzata e punteggi con codici colore. [Ulteriori informazioni](smart-audience.md).
 * Con Smart audience (Beta) puoi trovare e assegnare la priorità agli account e ai lead giusti. Descrivi gli account desiderati in linguaggio semplice, aggiungi dati CRM e segnali di crescita, rivedi i lead con punteggio e aggiungili a un flusso di lavoro in uscita. [Ulteriori informazioni](smart-audience.md).
 * Filtra i contatti in base ai campi account, insieme ai campi contatto e opportunità, per trovare i contatti giusti ed eseguire il targeting dei flussi di lavoro in uscita in modo più preciso. [Ulteriori informazioni](prospects.md#filter-and-find-prospects).
 * I contatti mostrano il nome dell’account e del proprietario associati; nella pagina di un potenziale cliente sono ora visualizzati 90 giorni di attività di marketing, rispetto ai 30 di prima. [Ulteriori informazioni](prospects.md#review-prospect-details).
