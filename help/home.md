@@ -21,9 +21,9 @@ level_v2:
 topic_v2:
   - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
     internal-label: Artificial intelligence
-source-git-commit: 633ca975d4fe58bdcc84caf633049ae1190b0f56
+source-git-commit: df256cf271296b82fab2ed10725a0d6bd165e05b
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '553'
 ht-degree: 17%
 ---
 
@@ -44,7 +44,7 @@ L&#39;app fa parte della famiglia di prodotti [!DNL Marketo], insieme a [!DNL Ma
 * **Fai domande in linguaggio naturale** con la chat basata su IA, che utilizza i tuoi dati di gestione delle relazioni con i clienti, il coinvolgimento e il Knowledge Center.
 * **Tieni traccia delle prestazioni di outreach** con rapporti e-mail e prenotazione riunioni.
 
->[!VIDEO](https://video.tv.adobe.com/v/3505355?captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3505339)
 
 ## Utilizzare la home page
 
@@ -56,7 +56,7 @@ La pagina Home mostra anche le attività e i flussi di lavoro in uscita futuri. 
 
 ::::landing-cards-container
 :::card
-![icona](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=it)
+![icona](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Introduzione
 
@@ -66,7 +66,7 @@ Completa l’impostazione dell’amministratore una tantum per i gruppi di utent
 :::
 
 :::card
-![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=it)
+![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Potenziali clienti
 
@@ -76,7 +76,7 @@ Crea, filtra e controlla l’elenco di potenziali clienti.
 :::
 
 :::card
-![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=it)
+![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Account
 
@@ -86,7 +86,7 @@ Dai priorità all’estensione con pipeline a livello di account e dati di coinv
 :::
 
 :::card
-![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=it)
+![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Pubblico avanzato (Beta)
 
@@ -96,7 +96,7 @@ Crea e assegna priorità agli elenchi di account e lead, quindi aggiungi i lead 
 :::
 
 :::card
-![icona](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=it)
+![icona](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Flussi di lavoro in uscita
 
@@ -106,7 +106,7 @@ Crea cadenze guidate da obiettivi con e-mail generate dall’intelligenza artifi
 :::
 
 :::card
-![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=it)
+![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Attività
 
@@ -116,7 +116,7 @@ Elabora le chiamate telefoniche, LinkedInMail e le attività di revisione e-mail
 :::
 
 :::card
-![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=it)
+![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Prestazioni
 
@@ -126,7 +126,7 @@ Verifica le prestazioni di e-mail e prenotazione riunioni.
 :::
 
 :::card
-![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=it)
+![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Centro conoscenze
 
@@ -136,7 +136,7 @@ Crea un playbook che attinga l’attività di intelligenza artificiale e l’ass
 :::
 
 :::card
-![icona](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=it)
+![icona](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Integrazioni
 
@@ -146,17 +146,17 @@ Connetti Salesforce o Microsoft Dynamics 365 e mappa i campi.
 :::
 
 :::card
-![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=it)
+![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Configurazione del plug-in CRM
 
 Installa il plug-in CRM e configura le azioni Salesforce per i flussi di lavoro in uscita e le campagne Marketo.
 
-[Incorporare Marketo Qualifier nel CRM](crm-plugin-setup.md)
+[Configurare il plug-in CRM](crm-plugin-setup.md)
 :::
 
 :::card
-![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=it)
+![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Impostazioni profilo
 
@@ -166,7 +166,7 @@ Configura la disponibilità di e-mail, firma e calendario.
 :::
 
 :::card
-![icona](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=it)
+![icona](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Chat basata su IA
 
