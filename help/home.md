@@ -21,9 +21,9 @@ level_v2:
 topic_v2:
   - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
     internal-label: Artificial intelligence
-source-git-commit: 633ca975d4fe58bdcc84caf633049ae1190b0f56
+source-git-commit: df256cf271296b82fab2ed10725a0d6bd165e05b
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '553'
 ht-degree: 17%
 ---
 
@@ -152,7 +152,7 @@ Configurazione del plug-in CRM
 
 Installa il plug-in CRM e configura le azioni Salesforce per i flussi di lavoro in uscita e le campagne Marketo.
 
-[Incorporare Marketo Qualifier nel CRM](crm-plugin-setup.md)
+[Configurare il plug-in CRM](crm-plugin-setup.md)
 :::
 
 :::card

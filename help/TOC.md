@@ -1,7 +1,7 @@
 ---
 user-guide-title: '[!DNL Adobe Marketo Qualifier]'
 user-guide-description: Scopri come utilizzare [!DNL Adobe Marketo Qualifier] per automatizzare la qualificazione dei potenziali clienti, la sensibilizzazione e il coinvolgimento degli acquirenti per i team di vendita B2B.
-source-git-commit: 633ca975d4fe58bdcc84caf633049ae1190b0f56
+source-git-commit: df256cf271296b82fab2ed10725a0d6bd165e05b
 workflow-type: tm+mt
 source-wordcount: '47'
 ht-degree: 27%
@@ -20,7 +20,7 @@ ht-degree: 27%
 + [Prestazioni in uscita](performance.md)
 + [Impostazioni profilo](profile-settings.md)
 + [Integrazioni](integrations.md)
-+ [Connessioni CRM](crm-plugin-setup.md)
++ [Plug-in CRM](crm-plugin-setup.md)
 + [Configurare gli elementi di rilievo del marketing](marketing-highlights-setup.md)
 + [Chat basata su IA](ai-assistant.md)
 + [Impostazioni di amministrazione](admin-settings.md)
