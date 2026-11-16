@@ -1,6 +1,6 @@
 ---
 title: Impostare gli elementi di rilievo del marketing
-description: Scopri come collegare Marketo a Adobe Marketo Qualifier in modo che i rappresentanti possano visualizzare e filtrare i potenziali clienti in base alle attività live di Marketo in Dati salienti sul marketing.
+description: Scopri come inviare lead da Marketo Engage a Marketo Qualifier con un passaggio di flusso di Campaign intelligente e ottenere consigli sulle caratteristiche di marketing da rivedere.
 feature: Agentic AI, Sales Insights, Account Journeys
 role: Admin
 product_v2:
@@ -21,30 +21,63 @@ level_v2:
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
     internal-label: Data integration
-source-git-commit: fcdc5d36cbb1500cf984e1439291aa8dbf17b72b
+source-git-commit: adcfe279f38ca319589612820351c48af750bad9
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 3%
+source-wordcount: '1011'
+ht-degree: 2%
 ---
 
 # Configurare gli elementi di rilievo del marketing
 
-Marketing Highlights mostra l&#39;attività live [!DNL Marketo] di ogni potenziale cliente, ad esempio aperture e clic via e-mail, visite Web e riempimenti di moduli. Questo articolo spiega come connettere la tua istanza di [!DNL Marketo] in modo che l&#39;attività entri.
+Invia lead da [!DNL Adobe Marketo Engage] a [!DNL Adobe Marketo Qualifier] aggiungendo il passaggio di flusso **[!UICONTROL Invia a Marketo Qualifier]** a una campagna avanzata. I rappresentanti visualizzano i lead e l&#39;attività che li ha inviati su **[!UICONTROL Potenziali]** > **[!UICONTROL Marketing Highlights]**.
+
+Il passaggio di flusso funziona con entrambi i tipi di Smart Campaign:
+
+* **Attivare le campagne** invia il coinvolgimento man mano che si verifica, ad esempio aperture e clic delle e-mail, clic sui collegamenti, riempimenti di moduli e visite alle pagine Web.
+* **Le campagne batch** inviano i lead qualificati ogni volta che viene eseguita la campagna.
+
+Quando un lead corrisponde ai criteri di targeting di un flusso di lavoro in uscita, Marketo Qualifier consiglia il lead al relativo proprietario nel CRM connesso. Il rappresentante proprietario rivede e approva il lead prima dell’iscrizione e della sensibilizzazione. I lead non vengono iscritti automaticamente.
+
+Marketing Highlights è disponibile in tutte le aree di produzione: Nord America, EMEA e Australia.
+
+## Prima di iniziare {#before-you-begin}
+
+Conferma questi prerequisiti prima di aggiungere il passaggio di flusso:
+
+* Un amministratore di Marketo ha attivato **[!UICONTROL Invia a Marketo Qualifier]** per la tua istanza di Marketo Engage in **[!UICONTROL Amministratore]**.
+* Marketo Qualifier è [connesso a Salesforce o Microsoft Dynamics 365](getting-started.md#connect-your-crm), pertanto ogni lead può corrispondere al relativo proprietario CRM.
 
 >[!IMPORTANT]
 >
->Per completare questa installazione è necessario accedere a Adobe Developer Console e a **[!UICONTROL Admin]** in [!DNL Marketo]. Rivolgiti al tuo contatto Adobe e all&#39;amministratore [!DNL Marketo] per completare le quattro parti seguenti.
+>Il passaggio di flusso **[!UICONTROL Invia a Marketo Qualifier]** non richiede un webhook, un URL di endpoint o credenziali API. Non è necessario accedere al Adobe Developer Console per utilizzarlo. Se il passaggio di flusso non è disponibile, contatta l’amministratore di Marketo.
 
-La configurazione è costituita da quattro parti:
+## Inviare lead con una campagna avanzata {#send-leads-with-a-smart-campaign}
 
-* Parte A: creare le credenziali API in Adobe Developer Console.
-* Parte B: raccogliere l’endpoint Adobe Marketo Qualifier e i relativi identificatori.
-* Parte C: configurare un webhook in [!DNL Marketo Engage].
-* Parte D: aggiungi il webhook a un trigger Smart Campaign.
+Utilizza una campagna avanzata esistente o creane una per i lead e le attività che desideri inviare.
 
-Al termine dell&#39;installazione, gli utenti visualizzano e filtrano questa attività in base a **[!UICONTROL Potenziali clienti]** > **[!UICONTROL Marketing Highlights]**.
+1. In Marketo Engage, apri una campagna avanzata oppure seleziona **[!UICONTROL Attività di marketing]** > **[!UICONTROL Nuove]** > **[!UICONTROL Campagna avanzata]** per crearne una.
+1. Nella scheda **[!UICONTROL Elenco avanzato]**, definisci quali lead sono idonei.
 
-## Parte A: Creare le credenziali API {#part-a-create-api-credentials}
+   * Per una campagna trigger, aggiungi i trigger per le attività che desideri inviare, ad esempio **[!UICONTROL Visite alla pagina Web]**, **[!UICONTROL Clic sul collegamento alla pagina Web]** o **[!UICONTROL Clic sul collegamento nell&#39;e-mail]**.
+   * Per una campagna batch, aggiungi i filtri per i lead che desideri inviare.
+
+1. Nella scheda **[!UICONTROL Flusso]**, aggiungi il passaggio di flusso **[!UICONTROL Invia a Marketo Qualifier]**.
+1. Attiva la campagna trigger oppure esegui o pianifica la campagna batch.
+1. In Marketo Qualifier, apri **[!UICONTROL Potenziali]** > **[!UICONTROL Elementi di rilievo marketing]** per esaminare i lead e la loro attività.
+
+   L&#39;attività mostra come è arrivato un lead, ad esempio **[!UICONTROL Aggiunto da una campagna batch]**.
+
+I lead che corrispondono ai criteri di targeting di un flusso di lavoro in uscita sono consigliati solo al proprietario del sistema di gestione delle relazioni con i clienti. Per rivedere i consigli, apri **[!UICONTROL Attività]** > **[!UICONTROL Suggerimenti agente]**. Consulta [Ottieni consigli dagli elementi di rilievo del marketing](outbound-workflows.md#automatically-enroll-prospects-from-marketing-highlights) e [suggerimenti agenti](tasks.md#agent-suggestions).
+
+## Configurazioni del webhook esistenti {#existing-webhook-setups}
+
+Le istruzioni seguenti descrivono la configurazione del webhook precedente. Non sono necessari per il passaggio di flusso **[!UICONTROL Invia a Marketo Qualifier]**. Se la tua organizzazione utilizza già un webhook, collabora con l’amministratore di Marketo e il contatto Adobe prima di modificare tale configurazione.
+
++++Istruzioni di configurazione del webhook
+
+Queste istruzioni richiedono l&#39;accesso a Adobe Developer Console e a **[!UICONTROL Admin]** in Marketo Engage.
+
+### Parte A: Creare le credenziali API {#part-a-create-api-credentials}
 
 Queste credenziali consentono a [!DNL Marketo] di eseguire l&#39;autenticazione in modo sicuro in Marketo Qualifier.
 
@@ -66,7 +99,7 @@ Per creare le credenziali:
 >
 >Mantieni il segreto client privato. Considerala come una password e non inviarla tramite e-mail. Utilizza il canale sicuro approvato della tua organizzazione per condividerlo con chiunque configuri il webhook.
 
-## Parte B: Raccogliere endpoint e identificatori {#part-b-gather-your-endpoint-and-identifiers}
+### Parte B: Raccogliere endpoint e identificatori {#part-b-gather-your-endpoint-and-identifiers}
 
 Sono necessari tre valori per [Parte C](#part-c-configure-the-marketo-webhook):
 
@@ -84,7 +117,7 @@ Sono necessari tre valori per [Parte C](#part-c-configure-the-marketo-webhook):
 
 Se non sei sicuro del tuo paese, ID organizzazione IMS o nome sandbox, il contatto Adobe può confermarli.
 
-## Parte C: Configurare il webhook di Marketo {#part-c-configure-the-marketo-webhook}
+### Parte C: Configurare il webhook di Marketo {#part-c-configure-the-marketo-webhook}
 
 Per creare il webhook:
 
@@ -171,7 +204,7 @@ Per creare il webhook:
 
 1. Seleziona **[!UICONTROL Salva]**.
 
-## Parte D: Aggiungere il webhook a un trigger Smart Campaign {#part-d-add-the-webhook-to-a-trigger-smart-campaign}
+### Parte D: Aggiungere il webhook a un trigger Smart Campaign {#part-d-add-the-webhook-to-a-trigger-smart-campaign}
 
 Aggiungi un passaggio di flusso **[!UICONTROL Chiama webhook]** a un trigger di Smart Campaign, esistente o nuovo. I trigger dell’elenco avanzato per tale campagna determinano le attività da inviare a Marketo Qualifier.
 
@@ -183,6 +216,8 @@ Per aggiungere il webhook:
 1. Attiva la campagna avanzata.
 
 L’attività di tale campagna avanzata ora scorre in Marketo Qualifier. I rappresentanti visualizzano e filtrano questa attività per **[!UICONTROL Potenziali]** > **[!UICONTROL Elementi di rilievo marketing]**.
+
++++
 
 >[!MORELIKETHIS]
 >

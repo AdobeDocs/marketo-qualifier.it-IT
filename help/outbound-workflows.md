@@ -21,9 +21,9 @@ topic_v2:
     internal-label: Artificial intelligence
   - id: beb7a3c1-66ab-4786-b879-7621375b3c40
     internal-label: Email marketing
-source-git-commit: 633ca975d4fe58bdcc84caf633049ae1190b0f56
+source-git-commit: adcfe279f38ca319589612820351c48af750bad9
 workflow-type: tm+mt
-source-wordcount: '3086'
+source-wordcount: '3140'
 ht-degree: 0%
 ---
 
@@ -98,16 +98,19 @@ Ogni filtro degli elenchi **[!UICONTROL Lead]** e **[!UICONTROL Contatti]** può
 
 Tutti i filtri di targeting vengono salvati con il flusso di lavoro e applicati automaticamente quando aggiungi dei potenziali clienti. [I suggerimenti dell&#39;agente](tasks.md#agent-suggestions) utilizzano lo stesso set completo di filtri, pertanto i potenziali clienti consigliati corrispondono ai criteri di targeting.
 
-### Iscrizione automatica dei potenziali clienti da Marketing Highlights
+### Ottieni consigli da approfondimenti marketing {#automatically-enroll-prospects-from-marketing-highlights}
 
-Un flusso di lavoro in uscita può valutare l’attività dei punti salienti del marketing in tempo reale in base ai relativi criteri di targeting. Quando l&#39;attività corrisponde, [!DNL Marketo Qualifier] risolve il proprietario del CRM del prospect tramite e-mail e registra il prospect solo in un flusso di lavoro idoneo che appartiene a tale rappresentante.
+Un flusso di lavoro in uscita può valutare i lead e l’attività da Marketing Highlights in base ai relativi criteri di targeting. Invia lead da una campagna avanzata in batch o trigger con il passaggio di flusso **[!UICONTROL Invia a Marketo Qualifier]** in [!DNL Marketo Engage]. Consulta [Configurare le caratteristiche di marketing](marketing-highlights-setup.md).
 
-L’iscrizione automatica segue questa sequenza:
+Quando i criteri corrispondono, [!DNL Marketo Qualifier] risolve il proprietario del lead da Salesforce o Microsoft Dynamics 365 e consiglia il lead solo a tale rappresentante. I lead non vengono iscritti automaticamente.
+
+I consigli seguono questa sequenza:
 
 1. Un rappresentante definisce i criteri di targeting del flusso di lavoro.
-1. L&#39;attività Live [!DNL Marketo] arriva per un prospect.
-1. [!DNL Marketo Qualifier] risolve il proprietario del prospect da Salesforce o Microsoft Dynamics e valuta l&#39;attività in base ai flussi di lavoro idonei del proprietario.
-1. Quando i criteri corrispondono, il prospect viene registrato e inizia l’estensione.
+1. Arriva un lead in Marketing Highlights da una campagna Marketo Engage Smart.
+1. Marketo Qualifier confronta il lead con il proprietario del sistema di gestione delle relazioni con i clienti e valuta il lead e l’attività rispetto ai flussi di lavoro idonei del proprietario.
+1. Quando i criteri corrispondono, il proprietario riceve un consiglio in **[!UICONTROL Attività]** > **[!UICONTROL Suggerimenti agente]**.
+1. Il proprietario esamina il prospect consigliato e le e-mail generate, quindi [approva e iscrive il prospect](#approve-and-enroll-prospects) prima dell&#39;inizio dell&#39;estensione.
 
 Se un altro rappresentante sta già contattando il prospect, [!DNL Marketo Qualifier] visualizza un avviso prima dell&#39;avvio dell&#39;outreach duplicato.
 
