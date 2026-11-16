@@ -26,9 +26,9 @@ level_v2:
 topic_v2:
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: 633ca975d4fe58bdcc84caf633049ae1190b0f56
+source-git-commit: adcfe279f38ca319589612820351c48af750bad9
 workflow-type: tm+mt
-source-wordcount: '1033'
+source-wordcount: '1058'
 ht-degree: 1%
 ---
 
@@ -40,7 +40,7 @@ Per visualizzare i lead e i contatti a cui puoi accedere, seleziona **[!UICONTRO
 
 * **[!UICONTROL Lead]** Lead assegnati a te nel CRM connesso.
 * **[!UICONTROL Contatti]** Contatti assegnati all&#39;utente nel CRM connesso, con il relativo account associato. I dettagli di contatto includono anche il nome del proprietario. Questi dettagli sono disponibili per Salesforce e Microsoft Dynamics 365.
-* **[!UICONTROL Dati di rilievo sul marketing]** potenziali clienti con attività Marketo live, ad esempio aperture di e-mail o clic.
+* **[!UICONTROL Dati di rilievo sul marketing]** Potenziali inviati da campagne intelligenti in batch o attivate da Marketo Engage, incluso il coinvolgimento come aperture di e-mail o clic.
 * **[!UICONTROL Elenco persone]** Potenziali importati o aggiunti manualmente.
 
 ## Esamina il contesto del prospect ed esporta l’elenco
@@ -97,16 +97,16 @@ Puoi anche filtrare i contatti per campi dal loro account associato, ad esempio 
 
 ### Filtra per elementi di rilievo sul marketing
 
-Rivedi e assegna la priorità ai potenziali clienti in base al loro coinvolgimento live [!DNL Marketo], ad esempio attività e-mail, visite web e riempimenti di moduli. Il coinvolgimento appare quasi in tempo reale, come accade.
+Rivedi e assegna la priorità ai potenziali clienti inviati da [!DNL Marketo Engage], inclusi l&#39;attività e-mail, le visite Web e i riempimenti di moduli. Le campagne trigger inviano il coinvolgimento mentre si verifica, e le campagne batch inviano lead qualificati ogni volta che vengono eseguite.
 
 Per filtrare i potenziali clienti in base alle caratteristiche di marketing:
 
 1. Seleziona **[!UICONTROL Filtro]**.
 1. Aggiungi un filtro Marketing Highlights e imposta il tipo di attività, la campagna o altri attributi per concentrarti sul coinvolgimento che conta.
 
-Ogni prospect mostra la sua ultima attività [!DNL Marketo] insieme alla cronologia recente.
+Ogni prospect mostra la sua ultima attività [!DNL Marketo] insieme alla cronologia recente. L&#39;attività può mostrare come è arrivato un lead, ad esempio **[!UICONTROL Aggiunto da una campagna batch]**.
 
-Marketing Highlights è disponibile in tutte le aree geografiche di produzione. Un amministratore completa una configurazione una tantum che connette [!DNL Marketo] a Marketo Qualifier. Consulta [Configurare le caratteristiche di marketing](integrations.md#turn-on-marketo-engagement-filtering).
+Marketing Highlights è disponibile in tutte le aree geografiche di produzione. Per inviare i lead con il passaggio di flusso **[!UICONTROL Invia a Marketo Qualifier]**, consulta [Configura elementi di rilievo marketing](marketing-highlights-setup.md).
 
 ## Rivedi dettagli prospect
 

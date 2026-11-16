@@ -25,9 +25,9 @@ level_v2:
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
     internal-label: Data integration
-source-git-commit: df256cf271296b82fab2ed10725a0d6bd165e05b
+source-git-commit: adcfe279f38ca319589612820351c48af750bad9
 workflow-type: tm+mt
-source-wordcount: '1530'
+source-wordcount: '1517'
 ht-degree: 0%
 ---
 
@@ -186,7 +186,7 @@ Quando la sincronizzazione delle attività è disattivata, Marketo Qualifier con
 
 Marketing Highlights consente ai rappresentanti di trovare e assegnare la priorità ai potenziali clienti in base al loro coinvolgimento live [!DNL Marketo], ad esempio aperture di e-mail e clic. Vedi [Filtra per evidenziazioni marketing](prospects.md#filter-by-marketing-highlights).
 
-Un amministratore completa una configurazione una tantum che connette [!DNL Marketo] a Marketo Qualifier per l&#39;organizzazione e la sandbox pertinenti. La configurazione prevede la creazione di credenziali API in Adobe Developer Console, la configurazione di un webhook in [!DNL Marketo] e l&#39;aggiunta di tale webhook a una campagna avanzata di attivazione. Per i passaggi completi, consulta [Imposta elementi di rilievo marketing](marketing-highlights-setup.md).
+Aggiungi il passaggio di flusso **[!UICONTROL Invia a Marketo Qualifier]** a una campagna avanzata in batch o trigger in [!DNL Marketo Engage] per inviare lead qualificati, senza webhook o credenziali API da configurare. Consulta [Configurare gli elementi di rilievo del marketing](marketing-highlights-setup.md) per i prerequisiti e i passaggi.
 
 Marketing Highlights è disponibile in tutte le aree di produzione: Nord America, EMEA e Australia.
 
